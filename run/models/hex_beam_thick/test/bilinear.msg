@@ -1,0 +1,5254 @@
+1
+
+   Abaqus 3DEXPERIENCE R2018x                                  Date 28-Jan-2022   Time 11:10:56
+   For use by UNIVERSITY COLLEGE LONDON under license from Dassault Systemes or its subsidiary.
+
+                                                                                 
+                                                                                 
+ STEP    1     INCREMENT     1     STEP TIME    0.00    
+
+
+                        S T E P       1     S T A T I C   A N A L Y S I S
+
+
+                                                                                          
+
+     AUTOMATIC TIME CONTROL WITH -
+          A SUGGESTED INITIAL TIME INCREMENT OF                1.000E-02
+          AND A TOTAL TIME PERIOD OF                            1.00    
+          THE MINIMUM TIME INCREMENT ALLOWED IS                1.000E-02
+          THE MAXIMUM TIME INCREMENT ALLOWED IS                1.000E-02
+
+     LINEAR EQUATION SOLVER TYPE         DIRECT SPARSE
+
+ CONVERGENCE TOLERANCE PARAMETERS FOR FORCE    
+     CRITERION FOR RESIDUAL FORCE     FOR A NONLINEAR PROBLEM          5.000E-03
+     CRITERION FOR DISP.    CORRECTION IN A NONLINEAR PROBLEM          1.000E-02
+     INITIAL VALUE OF TIME AVERAGE FORCE                               1.000E-02
+     AVERAGE FORCE     IS TIME AVERAGE FORCE    
+     ALTERNATE CRIT. FOR RESIDUAL FORCE     FOR A NONLINEAR PROBLEM    2.000E-02
+     CRITERION FOR ZERO FORCE     RELATIVE TO TIME AVRG. FORCE         1.000E-05
+     CRITERION FOR RESIDUAL FORCE     WHEN THERE IS ZERO FLUX          1.000E-05
+     CRITERION FOR DISP.    CORRECTION WHEN THERE IS ZERO FLUX         1.000E-03
+     CRITERION FOR RESIDUAL FORCE     FOR A LINEAR INCREMENT           1.000E-08
+     FIELD CONVERSION RATIO                                             1.00    
+     CRITERION FOR ZERO FORCE     REL. TO TIME AVRG. MAX. FORCE        1.000E-05
+     CRITERION FOR ZERO DISP.    RELATIVE TO CHARACTERISTIC LENGTH     1.000E-08
+
+ CONVERGENCE TOLERANCE PARAMETERS FOR MOMENT   
+     CRITERION FOR RESIDUAL MOMENT    FOR A NONLINEAR PROBLEM          5.000E-03
+     CRITERION FOR ROTATION CORRECTION IN A NONLINEAR PROBLEM          1.000E-02
+     INITIAL VALUE OF TIME AVERAGE MOMENT                              1.000E-02
+     AVERAGE MOMENT    IS TIME AVERAGE MOMENT   
+     ALTERNATE CRIT. FOR RESIDUAL MOMENT    FOR A NONLINEAR PROBLEM    2.000E-02
+     CRITERION FOR ZERO MOMENT    RELATIVE TO TIME AVRG. MOMENT        1.000E-05
+     CRITERION FOR RESIDUAL MOMENT    WHEN THERE IS ZERO FLUX          1.000E-05
+     CRITERION FOR ROTATION CORRECTION WHEN THERE IS ZERO FLUX         1.000E-03
+     CRITERION FOR RESIDUAL MOMENT    FOR A LINEAR INCREMENT           1.000E-08
+     FIELD CONVERSION RATIO                                             1.00    
+     CRITERION FOR ZERO MOMENT    REL. TO TIME AVRG. MAX. MOMENT       1.000E-05
+
+     VOLUMETRIC STRAIN COMPATIBILITY TOLERANCE FOR HYBRID SOLIDS       1.000E-05
+     AXIAL STRAIN COMPATIBILITY TOLERANCE FOR HYBRID BEAMS             1.000E-05
+     TRANS. SHEAR STRAIN COMPATIBILITY TOLERANCE FOR HYBRID BEAMS      1.000E-05
+     SOFT CONTACT CONSTRAINT COMPATIBILITY TOLERANCE FOR P>P0          5.000E-03
+     SOFT CONTACT CONSTRAINT COMPATIBILITY TOLERANCE FOR P=0.0         0.100    
+     CONTACT FORCE ERROR TOLERANCE FOR CONVERT SDI=YES                 1.00    
+     DISPLACEMENT COMPATIBILITY TOLERANCE FOR DCOUP ELEMENTS           1.000E-05
+     ROTATION COMPATIBILITY TOLERANCE FOR DCOUP ELEMENTS               1.000E-05
+
+ EQUILIBRIUM WILL BE CHECKED FOR SEVERE DISCONTINUITY ITERATIONS
+
+ TIME INCREMENTATION CONTROL PARAMETERS:
+     FIRST EQUILIBRIUM ITERATION FOR CONSECUTIVE DIVERGENCE CHECK              4
+     EQUILIBRIUM ITERATION AT WHICH LOG. CONVERGENCE RATE CHECK BEGINS         8
+     EQUILIBRIUM ITERATION AFTER WHICH ALTERNATE RESIDUAL IS USED              9
+     MAXIMUM EQUILIBRIUM ITERATIONS ALLOWED                                   16
+     EQUILIBRIUM ITERATION COUNT FOR CUT-BACK IN NEXT INCREMENT               10
+     MAXIMUM EQUILIB. ITERS IN TWO INCREMENTS FOR TIME INCREMENT INCREASE      4
+     MAXIMUM ITERATIONS FOR SEVERE DISCONTINUITIES                            50
+     MAXIMUM ATTEMPTS ALLOWED IN AN INCREMENT                                  5
+     MAXIMUM DISCON. ITERS IN TWO INCREMENTS FOR TIME INCREMENT INCREASE      50
+     MAXIMUM CONTACT AUGMENTATIONS FOR *SURFACE BEHAVIOR,AUGMENTED LAGRANGE   50
+     CUT-BACK FACTOR AFTER DIVERGENCE                                 0.2500    
+     CUT-BACK FACTOR FOR TOO SLOW CONVERGENCE                         0.5000    
+     CUT-BACK FACTOR AFTER TOO MANY EQUILIBRIUM ITERATIONS            0.7500    
+     CUT-BACK FACTOR AFTER TOO MANY SEVERE DISCONTINUITY ITERATIONS   0.2500    
+     CUT-BACK FACTOR AFTER PROBLEMS IN ELEMENT ASSEMBLY               0.2500    
+     INCREASE FACTOR AFTER TWO INCREMENTS THAT CONVERGE QUICKLY        1.500    
+     MAX. TIME INCREMENT INCREASE FACTOR ALLOWED                       1.500    
+     MAX. TIME INCREMENT INCREASE FACTOR ALLOWED (DYNAMICS)            1.250    
+     MAX. TIME INCREMENT INCREASE FACTOR ALLOWED (DIFFUSION)           2.000    
+     MINIMUM TIME INCREMENT RATIO FOR EXTRAPOLATION TO OCCUR          0.1000    
+     MAX. RATIO OF TIME INCREMENT TO STABILITY LIMIT                   1.000    
+     FRACTION OF STABILITY LIMIT FOR NEW TIME INCREMENT               0.9500    
+     TIME INCREMENT INCREASE FACTOR BEFORE A TIME POINT                1.000    
+     GLOBAL STABILIZATION CONTROL IS NOT USED
+
+          PRINT OF INCREMENT NUMBER, TIME, ETC., EVERY    1  INCREMENTS
+
+     THE MAXIMUM NUMBER OF INCREMENTS IN THIS STEP IS                    1000
+
+          LARGE DISPLACEMENT THEORY WILL BE USED
+
+     LINEAR EXTRAPOLATION WILL BE USED
+
+     CHARACTERISTIC ELEMENT LENGTH     1.000E-02
+
+     DETAILS REGARDING ACTUAL SOLUTION WAVEFRONT REQUESTED
+
+     DETAILED OUTPUT OF DIAGNOSTICS TO DATABASE REQUESTED
+
+     PRINT OF INCREMENT NUMBER, TIME, ETC., TO THE MESSAGE FILE EVERY     1  INCREMENTS
+
+     COLLECTING MODEL CONSTRAINT INFORMATION FOR OVERCONSTRAINT CHECKS
+
+     COLLECTING STEP CONSTRAINT INFORMATION FOR OVERCONSTRAINT CHECKS
+
+
+  INCREMENT     1 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 33.3268E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 257.273E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      8.136E-03   TIME AVG. FORCE       8.136E-03
+ LARGEST RESIDUAL FORCE            -2.495E-03   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+
+ AVERAGE MOMENT                     1.747E-03   TIME AVG. MOMENT      1.747E-03
+ LARGEST RESIDUAL MOMENT            1.655E-08   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.023E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.023E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+          ROTATION CORRECTION TOO LARGE COMPARED TO ROTATION INCREMENT
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 117.383E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 248.857E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      8.063E-03   TIME AVG. FORCE       8.063E-03
+ LARGEST RESIDUAL FORCE             3.577E-10   AT NODE         37   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -6.837E-07   AT NODE         26   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     1.746E-03   TIME AVG. MOMENT      1.746E-03
+ LARGEST RESIDUAL MOMENT           -5.445E-11   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.023E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.345E-07   AT NODE        897   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  1.000E-02
+ STEP TIME COMPLETED       1.000E-02,  TOTAL TIME COMPLETED        1.000E-02
+
+
+  INCREMENT     2 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 107.576E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 294.190E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      3.223E-02   TIME AVG. FORCE       2.015E-02
+ LARGEST RESIDUAL FORCE             5.680E-10   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        1.737E-06   AT NODE         28   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     5.291E-03   TIME AVG. MOMENT      3.519E-03
+ LARGEST RESIDUAL MOMENT            2.172E-10   AT NODE         30   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.022E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.689E-07   AT NODE        784   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  2.000E-02
+ STEP TIME COMPLETED       2.000E-02,  TOTAL TIME COMPLETED        2.000E-02
+
+
+  INCREMENT     3 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 227.215E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 125.714E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      4.832E-02   TIME AVG. FORCE       2.954E-02
+ LARGEST RESIDUAL FORCE             4.473E-10   AT NODE         13   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.201E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.935E-03   TIME AVG. MOMENT      4.991E-03
+ LARGEST RESIDUAL MOMENT           -3.244E-10   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.022E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.688E-07   AT NODE        849   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  3.000E-02
+ STEP TIME COMPLETED       3.000E-02,  TOTAL TIME COMPLETED        3.000E-02
+
+
+  INCREMENT     4 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 186.168E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.70721E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      6.439E-02   TIME AVG. FORCE       3.825E-02
+ LARGEST RESIDUAL FORCE            -5.546E-10   AT NODE          1   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.200E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     1.058E-02   TIME AVG. MOMENT      6.387E-03
+ LARGEST RESIDUAL MOMENT           -4.313E-10   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.022E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.684E-07   AT NODE        897   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  4.000E-02
+ STEP TIME COMPLETED       4.000E-02,  TOTAL TIME COMPLETED        4.000E-02
+
+
+  INCREMENT     5 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 49.5359E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.34446E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      8.044E-02   TIME AVG. FORCE       4.669E-02
+ LARGEST RESIDUAL FORCE            -6.706E-10   AT NODE         29   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.199E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     1.322E-02   TIME AVG. MOMENT      7.754E-03
+ LARGEST RESIDUAL MOMENT            5.383E-10   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.022E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.682E-07   AT NODE        850   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  5.000E-02
+ STEP TIME COMPLETED       5.000E-02,  TOTAL TIME COMPLETED        5.000E-02
+
+
+  INCREMENT     6 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 176.280E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 463.209E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      9.647E-02   TIME AVG. FORCE       5.498E-02
+ LARGEST RESIDUAL FORCE            -6.923E-10   AT NODE         21   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.631E-06   AT NODE         26   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     1.586E-02   TIME AVG. MOMENT      9.105E-03
+ LARGEST RESIDUAL MOMENT            6.451E-10   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.021E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.679E-07   AT NODE        833   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  6.000E-02
+ STEP TIME COMPLETED       6.000E-02,  TOTAL TIME COMPLETED        6.000E-02
+
+
+  INCREMENT     7 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 63.3766E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 2.71064E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.112       TIME AVG. FORCE       6.320E-02
+ LARGEST RESIDUAL FORCE            -1.001E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.197E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     1.850E-02   TIME AVG. MOMENT      1.045E-02
+ LARGEST RESIDUAL MOMENT            7.518E-10   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.021E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.676E-07   AT NODE        786   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  7.000E-02
+ STEP TIME COMPLETED       7.000E-02,  TOTAL TIME COMPLETED        7.000E-02
+
+
+  INCREMENT     8 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 73.6650E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 163.351E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.128       TIME AVG. FORCE       7.136E-02
+ LARGEST RESIDUAL FORCE            -1.143E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.196E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     2.114E-02   TIME AVG. MOMENT      1.178E-02
+ LARGEST RESIDUAL MOMENT            8.585E-10   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.021E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.673E-07   AT NODE        786   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  8.000E-02
+ STEP TIME COMPLETED       8.000E-02,  TOTAL TIME COMPLETED        8.000E-02
+
+
+  INCREMENT     9 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 147.729E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 241.609E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.144       TIME AVG. FORCE       7.948E-02
+ LARGEST RESIDUAL FORCE            -1.417E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.195E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     2.378E-02   TIME AVG. MOMENT      1.312E-02
+ LARGEST RESIDUAL MOMENT            9.648E-10   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.021E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.671E-07   AT NODE        465   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  9.000E-02
+ STEP TIME COMPLETED       9.000E-02,  TOTAL TIME COMPLETED        9.000E-02
+
+
+  INCREMENT    10 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 60.5949E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 168.996E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.160       TIME AVG. FORCE       8.757E-02
+ LARGEST RESIDUAL FORCE            -1.765E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.193E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     2.641E-02   TIME AVG. MOMENT      1.445E-02
+ LARGEST RESIDUAL MOMENT            1.071E-09   AT NODE         30   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.020E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.668E-07   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.100    
+ STEP TIME COMPLETED       0.100    ,  TOTAL TIME COMPLETED        0.100    
+
+
+  INCREMENT    11 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 48.3458E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 376.285E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.176       TIME AVG. FORCE       9.564E-02
+ LARGEST RESIDUAL FORCE            -2.155E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.192E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     2.905E-02   TIME AVG. MOMENT      1.577E-02
+ LARGEST RESIDUAL MOMENT            1.178E-09   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.020E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.665E-07   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.110    
+ STEP TIME COMPLETED       0.110    ,  TOTAL TIME COMPLETED        0.110    
+
+
+  INCREMENT    12 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =  0.10000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 27.4583E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 437.532E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.192       TIME AVG. FORCE       0.104    
+ LARGEST RESIDUAL FORCE            -2.273E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.191E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     3.168E-02   TIME AVG. MOMENT      1.710E-02
+ LARGEST RESIDUAL MOMENT            1.284E-09   AT NODE         30   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.020E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.663E-07   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.120    
+ STEP TIME COMPLETED       0.120    ,  TOTAL TIME COMPLETED        0.120    
+
+
+  INCREMENT    13 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 154.366E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 10.1880E+15 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.208       TIME AVG. FORCE       0.112    
+ LARGEST RESIDUAL FORCE            -2.417E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        2.249E-06   AT NODE        337   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     3.432E-02   TIME AVG. MOMENT      1.842E-02
+ LARGEST RESIDUAL MOMENT           -1.390E-09   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.019E-03   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.660E-07   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.130    
+ STEP TIME COMPLETED       0.130    ,  TOTAL TIME COMPLETED        0.130    
+
+
+  INCREMENT    14 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 74.9537E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 260.708E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.224       TIME AVG. FORCE       0.120    
+ LARGEST RESIDUAL FORCE            -2.830E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.189E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     3.695E-02   TIME AVG. MOMENT      1.975E-02
+ LARGEST RESIDUAL MOMENT            1.496E-09   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.019E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.658E-07   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.140    
+ STEP TIME COMPLETED       0.140    ,  TOTAL TIME COMPLETED        0.140    
+
+
+  INCREMENT    15 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 329.004E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 115.212E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.240       TIME AVG. FORCE       0.128    
+ LARGEST RESIDUAL FORCE            -3.009E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.188E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     3.958E-02   TIME AVG. MOMENT      2.107E-02
+ LARGEST RESIDUAL MOMENT           -1.602E-09   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.019E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.655E-07   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.150    
+ STEP TIME COMPLETED       0.150    ,  TOTAL TIME COMPLETED        0.150    
+
+
+  INCREMENT    16 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 199.535E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 77.8417E+12 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.256       TIME AVG. FORCE       0.136    
+ LARGEST RESIDUAL FORCE            -3.311E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        1.217E-06   AT NODE         28   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     4.221E-02   TIME AVG. MOMENT      2.239E-02
+ LARGEST RESIDUAL MOMENT           -1.707E-09   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.019E-03   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.652E-07   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.160    
+ STEP TIME COMPLETED       0.160    ,  TOTAL TIME COMPLETED        0.160    
+
+
+  INCREMENT    17 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 62.7946E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.22405E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.272       TIME AVG. FORCE       0.144    
+ LARGEST RESIDUAL FORCE            -3.534E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.186E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     4.484E-02   TIME AVG. MOMENT      2.371E-02
+ LARGEST RESIDUAL MOMENT           -1.813E-09   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.018E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.650E-07   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.170    
+ STEP TIME COMPLETED       0.170    ,  TOTAL TIME COMPLETED        0.170    
+
+
+  INCREMENT    18 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 715.527E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 130.409E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.284       TIME AVG. FORCE       0.152    
+ LARGEST RESIDUAL FORCE             2.546E-06   AT NODE        611   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.576E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     4.745E-02   TIME AVG. MOMENT      2.503E-02
+ LARGEST RESIDUAL MOMENT            1.675E-07   AT NODE          6   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.021E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     6.040E-06   AT NODE        611   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.180    
+ STEP TIME COMPLETED       0.180    ,  TOTAL TIME COMPLETED        0.180    
+
+
+  INCREMENT    19 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 242.981E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 822.630E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.299       TIME AVG. FORCE       0.159    
+ LARGEST RESIDUAL FORCE             2.705E-06   AT NODE        884   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        5.541E-06   AT NODE         18   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     4.998E-02   TIME AVG. MOMENT      2.634E-02
+ LARGEST RESIDUAL MOMENT            2.408E-07   AT NODE        175   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.036E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.642E-05   AT NODE        336   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION    9.406E-09
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.190    
+ STEP TIME COMPLETED       0.190    ,  TOTAL TIME COMPLETED        0.190    
+
+
+  INCREMENT    20 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 642.564E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 274.205E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.317       TIME AVG. FORCE       0.167    
+ LARGEST RESIDUAL FORCE            -1.433E-06   AT NODE        450   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        7.813E-06   AT NODE        819   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     5.245E-02   TIME AVG. MOMENT      2.765E-02
+ LARGEST RESIDUAL MOMENT           -1.105E-07   AT NODE        450   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.048E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.052E-05   AT NODE        838   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -4.378E-09
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.200    
+ STEP TIME COMPLETED       0.200    ,  TOTAL TIME COMPLETED        0.200    
+
+
+  INCREMENT    21 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 89.2304E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 357.985E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.332       TIME AVG. FORCE       0.175    
+ LARGEST RESIDUAL FORCE             2.571E-07   AT NODE        773   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        2.116E-06   AT NODE        610   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     5.487E-02   TIME AVG. MOMENT      2.895E-02
+ LARGEST RESIDUAL MOMENT            1.204E-07   AT NODE        772   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.059E-03   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.667E-05   AT NODE        367   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION    4.733E-09
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.210    
+ STEP TIME COMPLETED       0.210    ,  TOTAL TIME COMPLETED        0.210    
+
+
+  INCREMENT    22 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 47.1652E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 367.702E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.341       TIME AVG. FORCE       0.183    
+ LARGEST RESIDUAL FORCE             3.112E-06   AT NODE        579   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.591E-06   AT NODE        773   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     5.723E-02   TIME AVG. MOMENT      3.023E-02
+ LARGEST RESIDUAL MOMENT            3.140E-07   AT NODE        173   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.066E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.299E-05   AT NODE        839   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -1.047E-08
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.220    
+ STEP TIME COMPLETED       0.220    ,  TOTAL TIME COMPLETED        0.220    
+
+
+  INCREMENT    23 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 69.2364E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 296.778E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.359       TIME AVG. FORCE       0.190    
+ LARGEST RESIDUAL FORCE            -1.937E-06   AT NODE        641   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.639E-06   AT NODE        328   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     5.946E-02   TIME AVG. MOMENT      3.150E-02
+ LARGEST RESIDUAL MOMENT           -3.540E-07   AT NODE        484   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.049E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.110E-05   AT NODE        640   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -1.032E-08
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.230    
+ STEP TIME COMPLETED       0.230    ,  TOTAL TIME COMPLETED        0.230    
+
+
+  INCREMENT    24 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 139.706E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.35672E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.362       TIME AVG. FORCE       0.197    
+ LARGEST RESIDUAL FORCE             4.723E-04   AT NODE        106   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        5.079E-06   AT NODE        818   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     6.154E-02   TIME AVG. MOMENT      3.275E-02
+ LARGEST RESIDUAL MOMENT            1.930E-05   AT NODE        113   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.028E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.232E-05   AT NODE        307   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION    5.147E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.240    
+ STEP TIME COMPLETED       0.240    ,  TOTAL TIME COMPLETED        0.240    
+
+
+  INCREMENT    25 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 147.597E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 114.435E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.383       TIME AVG. FORCE       0.205    
+ LARGEST RESIDUAL FORCE             2.190E-06   AT NODE        744   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        1.986E-06   AT NODE         25   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     6.351E-02   TIME AVG. MOMENT      3.398E-02
+ LARGEST RESIDUAL MOMENT            5.943E-07   AT NODE        743   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.012E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.774E-05   AT NODE        520   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -1.086E-08
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.250    
+ STEP TIME COMPLETED       0.250    ,  TOTAL TIME COMPLETED        0.250    
+
+
+  INCREMENT    26 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 156.244E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 741.857E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.390       TIME AVG. FORCE       0.212    
+ LARGEST RESIDUAL FORCE            -3.172E-06   AT NODE        793   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        4.030E-06   AT NODE          6   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     6.539E-02   TIME AVG. MOMENT      3.519E-02
+ LARGEST RESIDUAL MOMENT            3.810E-07   AT NODE        794   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.003E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.123E-05   AT NODE        310   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -5.751E-09
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.260    
+ STEP TIME COMPLETED       0.260    ,  TOTAL TIME COMPLETED        0.260    
+
+
+  INCREMENT    27 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 55.1512E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 654.531E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.400       TIME AVG. FORCE       0.219    
+ LARGEST RESIDUAL FORCE            -3.925E-06   AT NODE        521   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.677E-06   AT NODE        335   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     6.722E-02   TIME AVG. MOMENT      3.638E-02
+ LARGEST RESIDUAL MOMENT            6.625E-07   AT NODE        636   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      9.936E-04   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -9.990E-06   AT NODE        311   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -1.011E-08
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.270    
+ STEP TIME COMPLETED       0.270    ,  TOTAL TIME COMPLETED        0.270    
+
+
+  INCREMENT    28 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 115.976E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 717.788E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.405       TIME AVG. FORCE       0.226    
+ LARGEST RESIDUAL FORCE             7.827E-03   AT NODE         29   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.216E-06   AT NODE         29   DOF  2
+   INSTANCE: INST                                                                            
+          FORCE     EQUILIBRIUM NOT ACHIEVED WITHIN TOLERANCE.
+
+ AVERAGE MOMENT                     6.900E-02   TIME AVG. MOMENT      3.754E-02
+ LARGEST RESIDUAL MOMENT            8.710E-05   AT NODE         29   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      9.886E-04   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.218E-05   AT NODE        775   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -1.397E-06
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 75.3694E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 470.763E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     2
+
+
+ AVERAGE FORCE                      0.416       TIME AVG. FORCE       0.226    
+ LARGEST RESIDUAL FORCE             4.091E-08   AT NODE          6   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -7.714E-07   AT NODE         17   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     6.899E-02   TIME AVG. MOMENT      3.754E-02
+ LARGEST RESIDUAL MOMENT            1.256E-07   AT NODE         25   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      9.901E-04   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     3.146E-06   AT NODE        836   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   2 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  2 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.280    
+ STEP TIME COMPLETED       0.280    ,  TOTAL TIME COMPLETED        0.280    
+
+
+  INCREMENT    29 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 109.077E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 102.565E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.272       TIME AVG. FORCE       0.228    
+ LARGEST RESIDUAL FORCE            -1.082E-03   AT NODE        863   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        2.729E-05   AT NODE        836   DOF  1
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION   -5.443E-07
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     7.042E-02   TIME AVG. MOMENT      3.868E-02
+ LARGEST RESIDUAL MOMENT            4.517E-05   AT NODE        493   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.064E-03   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.519E-04   AT NODE        611   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION    8.429E-06
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.290    
+ STEP TIME COMPLETED       0.290    ,  TOTAL TIME COMPLETED        0.290    
+
+
+  INCREMENT    30 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 164.986E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.22179E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.266       TIME AVG. FORCE       0.229    
+ LARGEST RESIDUAL FORCE            -1.022E-04   AT NODE        611   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        8.421E-05   AT NODE         11   DOF  2
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION    1.641E-07
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     7.124E-02   TIME AVG. MOMENT      3.976E-02
+ LARGEST RESIDUAL MOMENT            5.365E-07   AT NODE        633   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.233E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -3.236E-04   AT NODE        449   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -2.905E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.300    
+ STEP TIME COMPLETED       0.300    ,  TOTAL TIME COMPLETED        0.300    
+
+
+  INCREMENT    31 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 37.9827E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 602.023E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.282       TIME AVG. FORCE       0.231    
+ LARGEST RESIDUAL FORCE             2.661E-05   AT NODE        771   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.151E-05   AT NODE         17   DOF  2
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION    1.985E-08
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     7.175E-02   TIME AVG. MOMENT      4.079E-02
+ LARGEST RESIDUAL MOMENT           -1.042E-07   AT NODE        369   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.320E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.641E-04   AT NODE        884   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -5.756E-08
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.310    
+ STEP TIME COMPLETED       0.310    ,  TOTAL TIME COMPLETED        0.310    
+
+
+  INCREMENT    32 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 145.074E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 205.223E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.435       TIME AVG. FORCE       0.237    
+ LARGEST RESIDUAL FORCE             6.107E-07   AT NODE        825   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.945E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.226E-02   TIME AVG. MOMENT      4.178E-02
+ LARGEST RESIDUAL MOMENT           -4.319E-08   AT NODE        819   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.319E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -7.045E-07   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.320    
+ STEP TIME COMPLETED       0.320    ,  TOTAL TIME COMPLETED        0.320    
+
+
+  INCREMENT    33 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 219.826E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 409.174E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.438       TIME AVG. FORCE       0.243    
+ LARGEST RESIDUAL FORCE            -9.775E-07   AT NODE        798   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.662E-06   AT NODE         30   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.277E-02   TIME AVG. MOMENT      4.272E-02
+ LARGEST RESIDUAL MOMENT           -1.760E-07   AT NODE        798   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.316E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     3.544E-06   AT NODE        478   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.330    
+ STEP TIME COMPLETED       0.330    ,  TOTAL TIME COMPLETED        0.330    
+
+
+  INCREMENT    34 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 88.4490E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 4.70024E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.435       TIME AVG. FORCE       0.249    
+ LARGEST RESIDUAL FORCE             4.889E-05   AT NODE        450   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -4.103E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.327E-02   TIME AVG. MOMENT      4.362E-02
+ LARGEST RESIDUAL MOMENT           -5.655E-07   AT NODE        449   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.321E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -3.579E-05   AT NODE        175   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION    2.002E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.340    
+ STEP TIME COMPLETED       0.340    ,  TOTAL TIME COMPLETED        0.340    
+
+
+  INCREMENT    35 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 554.236E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 73.7779E+12 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.438       TIME AVG. FORCE       0.254    
+ LARGEST RESIDUAL FORCE             4.898E-05   AT NODE        837   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -4.148E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.375E-02   TIME AVG. MOMENT      4.448E-02
+ LARGEST RESIDUAL MOMENT           -5.666E-07   AT NODE        884   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.326E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     3.146E-05   AT NODE        819   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -2.512E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.350    
+ STEP TIME COMPLETED       0.350    ,  TOTAL TIME COMPLETED        0.350    
+
+
+  INCREMENT    36 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 135.766E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 162.596E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.446       TIME AVG. FORCE       0.259    
+ LARGEST RESIDUAL FORCE             2.068E-06   AT NODE        884   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        2.700E-06   AT NODE         27   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.423E-02   TIME AVG. MOMENT      4.530E-02
+ LARGEST RESIDUAL MOMENT            2.304E-08   AT NODE        611   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.325E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -7.598E-07   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.360    
+ STEP TIME COMPLETED       0.360    ,  TOTAL TIME COMPLETED        0.360    
+
+
+  INCREMENT    37 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 94.6070E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 302.300E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.449       TIME AVG. FORCE       0.265    
+ LARGEST RESIDUAL FORCE            -1.765E-06   AT NODE        449   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.905E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.470E-02   TIME AVG. MOMENT      4.610E-02
+ LARGEST RESIDUAL MOMENT           -1.741E-07   AT NODE        495   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.322E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     3.118E-06   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.370    
+ STEP TIME COMPLETED       0.370    ,  TOTAL TIME COMPLETED        0.370    
+
+
+  INCREMENT    38 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 457.181E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 73.0913E+12 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.451       TIME AVG. FORCE       0.269    
+ LARGEST RESIDUAL FORCE            -1.595E-06   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -4.510E-06   AT NODE        450   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.512E-02   TIME AVG. MOMENT      4.686E-02
+ LARGEST RESIDUAL MOMENT            6.433E-08   AT NODE        610   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.349E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.316E-04   AT NODE        175   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -8.479E-08
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.380    
+ STEP TIME COMPLETED       0.380    ,  TOTAL TIME COMPLETED        0.380    
+
+
+  INCREMENT    39 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 65.3790E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 426.922E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.430       TIME AVG. FORCE       0.274    
+ LARGEST RESIDUAL FORCE            -6.617E-06   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.066E-05   AT NODE        820   DOF  2
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION   -3.540E-09
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     7.542E-02   TIME AVG. MOMENT      4.759E-02
+ LARGEST RESIDUAL MOMENT           -1.027E-07   AT NODE        368   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.402E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.529E-04   AT NODE        771   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -1.358E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.390    
+ STEP TIME COMPLETED       0.390    ,  TOTAL TIME COMPLETED        0.390    
+
+
+  INCREMENT    40 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 46.1296E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 300.269E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.454       TIME AVG. FORCE       0.278    
+ LARGEST RESIDUAL FORCE            -9.131E-07   AT NODE        342   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.220E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.573E-02   TIME AVG. MOMENT      4.830E-02
+ LARGEST RESIDUAL MOMENT            5.349E-08   AT NODE        772   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.402E-03   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.418E-06   AT NODE        147   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.400    
+ STEP TIME COMPLETED       0.400    ,  TOTAL TIME COMPLETED        0.400    
+
+
+  INCREMENT    41 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 141.875E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 980.048E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.456       TIME AVG. FORCE       0.282    
+ LARGEST RESIDUAL FORCE             8.058E-07   AT NODE        843   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.184E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.603E-02   TIME AVG. MOMENT      4.897E-02
+ LARGEST RESIDUAL MOMENT           -5.329E-08   AT NODE        820   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.401E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.171E-06   AT NODE        890   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.410    
+ STEP TIME COMPLETED       0.410    ,  TOTAL TIME COMPLETED        0.410    
+
+
+  INCREMENT    42 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 73.6845E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 360.072E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.458       TIME AVG. FORCE       0.287    
+ LARGEST RESIDUAL FORCE             6.910E-07   AT NODE        843   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.171E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.633E-02   TIME AVG. MOMENT      4.962E-02
+ LARGEST RESIDUAL MOMENT           -5.341E-08   AT NODE        450   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.400E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.141E-06   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.420    
+ STEP TIME COMPLETED       0.420    ,  TOTAL TIME COMPLETED        0.420    
+
+
+  INCREMENT    43 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 65.5346E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 4.87740E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.459       TIME AVG. FORCE       0.291    
+ LARGEST RESIDUAL FORCE            -6.936E-07   AT NODE        825   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.095E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.663E-02   TIME AVG. MOMENT      5.025E-02
+ LARGEST RESIDUAL MOMENT            8.702E-08   AT NODE        527   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.398E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.307E-06   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.430    
+ STEP TIME COMPLETED       0.430    ,  TOTAL TIME COMPLETED        0.430    
+
+
+  INCREMENT    44 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 51.6166E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 113.132E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.461       TIME AVG. FORCE       0.295    
+ LARGEST RESIDUAL FORCE            -6.965E-07   AT NODE        778   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.119E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.694E-02   TIME AVG. MOMENT      5.086E-02
+ LARGEST RESIDUAL MOMENT            5.342E-08   AT NODE        578   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.397E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.176E-06   AT NODE         30   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.440    
+ STEP TIME COMPLETED       0.440    ,  TOTAL TIME COMPLETED        0.440    
+
+
+  INCREMENT    45 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 687.795E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.86924E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.463       TIME AVG. FORCE       0.298    
+ LARGEST RESIDUAL FORCE            -7.001E-07   AT NODE        342   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.501E-05   AT NODE         26   DOF  1
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION   -1.112E-09
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     7.724E-02   TIME AVG. MOMENT      5.145E-02
+ LARGEST RESIDUAL MOMENT           -5.347E-08   AT NODE        336   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.396E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     8.590E-07   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.450    
+ STEP TIME COMPLETED       0.450    ,  TOTAL TIME COMPLETED        0.450    
+
+
+  INCREMENT    46 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 49.8721E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 455.190E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.458       TIME AVG. FORCE       0.302    
+ LARGEST RESIDUAL FORCE            -2.649E-05   AT NODE        337   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -3.335E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.753E-02   TIME AVG. MOMENT      5.201E-02
+ LARGEST RESIDUAL MOMENT           -3.007E-07   AT NODE        450   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.398E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.846E-05   AT NODE        450   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION    1.941E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.460    
+ STEP TIME COMPLETED       0.460    ,  TOTAL TIME COMPLETED        0.460    
+
+
+  INCREMENT    47 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 514.027E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 142.908E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.460       TIME AVG. FORCE       0.305    
+ LARGEST RESIDUAL FORCE            -3.330E-05   AT NODE        481   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        6.208E-06   AT NODE         28   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.782E-02   TIME AVG. MOMENT      5.256E-02
+ LARGEST RESIDUAL MOMENT           -3.787E-07   AT NODE        368   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.400E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -2.272E-05   AT NODE        578   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -2.199E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.470    
+ STEP TIME COMPLETED       0.470    ,  TOTAL TIME COMPLETED        0.470    
+
+
+  INCREMENT    48 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 678.689E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 65.7325E+12 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.467       TIME AVG. FORCE       0.308    
+ LARGEST RESIDUAL FORCE            -2.563E-06   AT NODE        820   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.139E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.812E-02   TIME AVG. MOMENT      5.309E-02
+ LARGEST RESIDUAL MOMENT            2.671E-08   AT NODE        772   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.399E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     8.622E-07   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.480    
+ STEP TIME COMPLETED       0.480    ,  TOTAL TIME COMPLETED        0.480    
+
+
+  INCREMENT    49 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 60.9392E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 172.035E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.469       TIME AVG. FORCE       0.312    
+ LARGEST RESIDUAL FORCE            -2.626E-06   AT NODE        820   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.139E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.841E-02   TIME AVG. MOMENT      5.361E-02
+ LARGEST RESIDUAL MOMENT           -2.721E-08   AT NODE        820   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.398E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     9.738E-07   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.490    
+ STEP TIME COMPLETED       0.490    ,  TOTAL TIME COMPLETED        0.490    
+
+
+  INCREMENT    50 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =  0.10000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 192.250E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 104.968E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.470       TIME AVG. FORCE       0.315    
+ LARGEST RESIDUAL FORCE            -2.609E-06   AT NODE        450   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.087E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.870E-02   TIME AVG. MOMENT      5.411E-02
+ LARGEST RESIDUAL MOMENT            8.275E-08   AT NODE        753   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.396E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.010E-06   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.500    
+ STEP TIME COMPLETED       0.500    ,  TOTAL TIME COMPLETED        0.500    
+
+
+  INCREMENT    51 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 62.8505E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 553.849E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.472       TIME AVG. FORCE       0.318    
+ LARGEST RESIDUAL FORCE             2.738E-06   AT NODE        336   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.072E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.898E-02   TIME AVG. MOMENT      5.460E-02
+ LARGEST RESIDUAL MOMENT           -2.806E-08   AT NODE        336   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.395E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.343E-06   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.510    
+ STEP TIME COMPLETED       0.510    ,  TOTAL TIME COMPLETED        0.510    
+
+
+  INCREMENT    52 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 174.531E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 314.122E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.473       TIME AVG. FORCE       0.321    
+ LARGEST RESIDUAL FORCE             2.839E-06   AT NODE        885   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.101E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.927E-02   TIME AVG. MOMENT      5.507E-02
+ LARGEST RESIDUAL MOMENT            2.996E-08   AT NODE        584   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.395E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.225E-06   AT NODE        477   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.520    
+ STEP TIME COMPLETED       0.520    ,  TOTAL TIME COMPLETED        0.520    
+
+
+  INCREMENT    53 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 366.768E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.33882E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.475       TIME AVG. FORCE       0.324    
+ LARGEST RESIDUAL FORCE             6.315E-07   AT NODE        175   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        3.427E-05   AT NODE        821   DOF  1
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION   -2.283E-09
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     7.954E-02   TIME AVG. MOMENT      5.554E-02
+ LARGEST RESIDUAL MOMENT            6.099E-08   AT NODE        173   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.409E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     7.836E-05   AT NODE        450   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION    1.041E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.530    
+ STEP TIME COMPLETED       0.530    ,  TOTAL TIME COMPLETED        0.530    
+
+
+  INCREMENT    54 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 58.7544E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 772.825E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.470       TIME AVG. FORCE       0.327    
+ LARGEST RESIDUAL FORCE             4.870E-06   AT NODE        884   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -7.200E-06   AT NODE        773   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.976E-02   TIME AVG. MOMENT      5.598E-02
+ LARGEST RESIDUAL MOMENT           -8.783E-08   AT NODE        886   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.451E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     2.151E-04   AT NODE        885   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -1.489E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.540    
+ STEP TIME COMPLETED       0.540    ,  TOTAL TIME COMPLETED        0.540    
+
+
+  INCREMENT    55 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 270.059E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 164.790E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.477       TIME AVG. FORCE       0.329    
+ LARGEST RESIDUAL FORCE            -9.878E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.231E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     7.998E-02   TIME AVG. MOMENT      5.642E-02
+ LARGEST RESIDUAL MOMENT           -5.849E-08   AT NODE        451   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.450E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     9.230E-07   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.550    
+ STEP TIME COMPLETED       0.550    ,  TOTAL TIME COMPLETED        0.550    
+
+
+  INCREMENT    56 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 62.9326E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 323.384E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.478       TIME AVG. FORCE       0.332    
+ LARGEST RESIDUAL FORCE            -1.019E-08   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.220E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.019E-02   TIME AVG. MOMENT      5.685E-02
+ LARGEST RESIDUAL MOMENT            5.838E-08   AT NODE        579   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.449E-03   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     9.393E-07   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.560    
+ STEP TIME COMPLETED       0.560    ,  TOTAL TIME COMPLETED        0.560    
+
+
+  INCREMENT    57 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 1.71431E+15.
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 16.8543E+12 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.479       TIME AVG. FORCE       0.335    
+ LARGEST RESIDUAL FORCE            -1.005E-08   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.218E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.041E-02   TIME AVG. MOMENT      5.726E-02
+ LARGEST RESIDUAL MOMENT           -5.841E-08   AT NODE        367   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.448E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     9.271E-07   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.570    
+ STEP TIME COMPLETED       0.570    ,  TOTAL TIME COMPLETED        0.570    
+
+
+  INCREMENT    58 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 73.1968E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 78.6907E+12 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.480       TIME AVG. FORCE       0.337    
+ LARGEST RESIDUAL FORCE            -6.182E-08   AT NODE        755   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.216E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.063E-02   TIME AVG. MOMENT      5.766E-02
+ LARGEST RESIDUAL MOMENT            5.840E-08   AT NODE        173   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.447E-03   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     9.989E-07   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.580    
+ STEP TIME COMPLETED       0.580    ,  TOTAL TIME COMPLETED        0.580    
+
+
+  INCREMENT    59 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 336.783E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 134.771E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.481       TIME AVG. FORCE       0.339    
+ LARGEST RESIDUAL FORCE             3.388E-07   AT NODE        867   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        2.266E-06   AT NODE         27   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.084E-02   TIME AVG. MOMENT      5.805E-02
+ LARGEST RESIDUAL MOMENT            5.837E-08   AT NODE        143   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.445E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.563E-06   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.590    
+ STEP TIME COMPLETED       0.590    ,  TOTAL TIME COMPLETED        0.590    
+
+
+  INCREMENT    60 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 49.2955E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.16502E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.482       TIME AVG. FORCE       0.342    
+ LARGEST RESIDUAL FORCE            -1.193E-08   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.138E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.106E-02   TIME AVG. MOMENT      5.844E-02
+ LARGEST RESIDUAL MOMENT           -5.831E-08   AT NODE        451   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.444E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.511E-06   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.600    
+ STEP TIME COMPLETED       0.600    ,  TOTAL TIME COMPLETED        0.600    
+
+
+  INCREMENT    61 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 43.3407E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 3.01673E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.484       TIME AVG. FORCE       0.344    
+ LARGEST RESIDUAL FORCE            -9.852E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.197E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.127E-02   TIME AVG. MOMENT      5.881E-02
+ LARGEST RESIDUAL MOMENT           -5.827E-08   AT NODE        367   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.443E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -9.090E-07   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.610    
+ STEP TIME COMPLETED       0.610    ,  TOTAL TIME COMPLETED        0.610    
+
+
+  INCREMENT    62 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 129.740E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 239.750E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.485       TIME AVG. FORCE       0.346    
+ LARGEST RESIDUAL FORCE            -9.979E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.193E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.149E-02   TIME AVG. MOMENT      5.918E-02
+ LARGEST RESIDUAL MOMENT            5.826E-08   AT NODE        143   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.442E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -9.041E-07   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.620    
+ STEP TIME COMPLETED       0.620    ,  TOTAL TIME COMPLETED        0.620    
+
+
+  INCREMENT    63 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 56.2589E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 416.143E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.486       TIME AVG. FORCE       0.349    
+ LARGEST RESIDUAL FORCE            -9.996E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.189E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.170E-02   TIME AVG. MOMENT      5.954E-02
+ LARGEST RESIDUAL MOMENT           -5.825E-08   AT NODE        337   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.441E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     9.003E-07   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.630    
+ STEP TIME COMPLETED       0.630    ,  TOTAL TIME COMPLETED        0.630    
+
+
+  INCREMENT    64 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 224.321E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 509.791E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.487       TIME AVG. FORCE       0.351    
+ LARGEST RESIDUAL FORCE            -1.002E-08   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.185E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.192E-02   TIME AVG. MOMENT      5.989E-02
+ LARGEST RESIDUAL MOMENT            5.824E-08   AT NODE        173   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.440E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     8.963E-07   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.640    
+ STEP TIME COMPLETED       0.640    ,  TOTAL TIME COMPLETED        0.640    
+
+
+  INCREMENT    65 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 11.0869E+15 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 83.1407E+12 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.488       TIME AVG. FORCE       0.353    
+ LARGEST RESIDUAL FORCE            -9.862E-09   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.181E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.213E-02   TIME AVG. MOMENT      6.023E-02
+ LARGEST RESIDUAL MOMENT            5.823E-08   AT NODE        173   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.439E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -8.923E-07   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.650    
+ STEP TIME COMPLETED       0.650    ,  TOTAL TIME COMPLETED        0.650    
+
+
+  INCREMENT    66 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 755.589E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 3.18448E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.482       TIME AVG. FORCE       0.355    
+ LARGEST RESIDUAL FORCE             2.031E-05   AT NODE        608   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.055E-04   AT NODE         26   DOF  1
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION    4.097E-07
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     8.235E-02   TIME AVG. MOMENT      6.056E-02
+ LARGEST RESIDUAL MOMENT            2.252E-07   AT NODE        173   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.441E-03   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.354E-05   AT NODE        173   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.660    
+ STEP TIME COMPLETED       0.660    ,  TOTAL TIME COMPLETED        0.660    
+
+
+  INCREMENT    67 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 169.642E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 97.2116E+12 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.484       TIME AVG. FORCE       0.357    
+ LARGEST RESIDUAL FORCE            -2.359E-05   AT NODE        887   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -3.202E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.256E-02   TIME AVG. MOMENT      6.089E-02
+ LARGEST RESIDUAL MOMENT            2.620E-07   AT NODE        773   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.442E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.553E-05   AT NODE        838   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -2.117E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.670    
+ STEP TIME COMPLETED       0.670    ,  TOTAL TIME COMPLETED        0.670    
+
+
+  INCREMENT    68 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 95.7850E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 268.945E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.491       TIME AVG. FORCE       0.359    
+ LARGEST RESIDUAL FORCE            -2.858E-06   AT NODE        172   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.173E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.277E-02   TIME AVG. MOMENT      6.121E-02
+ LARGEST RESIDUAL MOMENT            2.840E-08   AT NODE        173   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.442E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     8.896E-07   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.680    
+ STEP TIME COMPLETED       0.680    ,  TOTAL TIME COMPLETED        0.680    
+
+
+  INCREMENT    69 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 172.130E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 321.937E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.492       TIME AVG. FORCE       0.361    
+ LARGEST RESIDUAL FORCE             2.901E-06   AT NODE        886   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.214E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.297E-02   TIME AVG. MOMENT      6.153E-02
+ LARGEST RESIDUAL MOMENT            2.866E-08   AT NODE        838   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.441E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.415E-06   AT NODE        148   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.690    
+ STEP TIME COMPLETED       0.690    ,  TOTAL TIME COMPLETED        0.690    
+
+
+  INCREMENT    70 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 994.280E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 155.082E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.493       TIME AVG. FORCE       0.363    
+ LARGEST RESIDUAL FORCE            -2.943E-06   AT NODE        609   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        4.118E-06   AT NODE         28   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.318E-02   TIME AVG. MOMENT      6.184E-02
+ LARGEST RESIDUAL MOMENT            4.846E-08   AT NODE        755   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.440E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.387E-06   AT NODE        604   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.700    
+ STEP TIME COMPLETED       0.700    ,  TOTAL TIME COMPLETED        0.700    
+
+
+  INCREMENT    71 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 95.9326E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 6.36480E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.494       TIME AVG. FORCE       0.364    
+ LARGEST RESIDUAL FORCE            -2.993E-06   AT NODE        838   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -8.598E-06   AT NODE        335   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.339E-02   TIME AVG. MOMENT      6.214E-02
+ LARGEST RESIDUAL MOMENT            2.928E-08   AT NODE        173   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.438E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.498E-06   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.710    
+ STEP TIME COMPLETED       0.710    ,  TOTAL TIME COMPLETED        0.710    
+
+
+  INCREMENT    72 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 249.096E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 405.206E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.495       TIME AVG. FORCE       0.366    
+ LARGEST RESIDUAL FORCE             3.087E-06   AT NODE        839   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -3.847E-06   AT NODE         26   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.360E-02   TIME AVG. MOMENT      6.244E-02
+ LARGEST RESIDUAL MOMENT           -3.014E-08   AT NODE        337   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.437E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     8.676E-07   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.720    
+ STEP TIME COMPLETED       0.720    ,  TOTAL TIME COMPLETED        0.720    
+
+
+  INCREMENT    73 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 159.027E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.13039E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.496       TIME AVG. FORCE       0.368    
+ LARGEST RESIDUAL FORCE             3.146E-06   AT NODE        839   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.151E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.381E-02   TIME AVG. MOMENT      6.273E-02
+ LARGEST RESIDUAL MOMENT            3.059E-08   AT NODE        838   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.436E-03   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -8.628E-07   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.730    
+ STEP TIME COMPLETED       0.730    ,  TOTAL TIME COMPLETED        0.730    
+
+
+  INCREMENT    74 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 51.2322E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 433.764E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.497       TIME AVG. FORCE       0.370    
+ LARGEST RESIDUAL FORCE            -3.205E-06   AT NODE        887   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.147E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.402E-02   TIME AVG. MOMENT      6.302E-02
+ LARGEST RESIDUAL MOMENT           -3.104E-08   AT NODE        337   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.436E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -8.592E-07   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.740    
+ STEP TIME COMPLETED       0.740    ,  TOTAL TIME COMPLETED        0.740    
+
+
+  INCREMENT    75 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 137.121E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.23541E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.498       TIME AVG. FORCE       0.372    
+ LARGEST RESIDUAL FORCE             3.263E-06   AT NODE        822   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.143E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.423E-02   TIME AVG. MOMENT      6.330E-02
+ LARGEST RESIDUAL MOMENT            3.149E-08   AT NODE        609   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.435E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     8.554E-07   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.750    
+ STEP TIME COMPLETED       0.750    ,  TOTAL TIME COMPLETED        0.750    
+
+
+  INCREMENT    76 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 40.4145E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 881.829E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.499       TIME AVG. FORCE       0.373    
+ LARGEST RESIDUAL FORCE            -7.604E-07   AT NODE        826   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        2.578E-06   AT NODE        338   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.442E-02   TIME AVG. MOMENT      6.358E-02
+ LARGEST RESIDUAL MOMENT            6.285E-08   AT NODE        172   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.447E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -6.254E-05   AT NODE        609   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -1.167E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.760    
+ STEP TIME COMPLETED       0.760    ,  TOTAL TIME COMPLETED        0.760    
+
+
+  INCREMENT    77 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 88.7563E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 597.494E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.500       TIME AVG. FORCE       0.375    
+ LARGEST RESIDUAL FORCE            -3.012E-06   AT NODE        886   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        6.670E-06   AT NODE        839   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.459E-02   TIME AVG. MOMENT      6.385E-02
+ LARGEST RESIDUAL MOMENT            7.904E-08   AT NODE        580   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.482E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.625E-04   AT NODE        886   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION    1.468E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.770    
+ STEP TIME COMPLETED       0.770    ,  TOTAL TIME COMPLETED        0.770    
+
+
+  INCREMENT    78 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 120.924E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 187.392E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.501       TIME AVG. FORCE       0.376    
+ LARGEST RESIDUAL FORCE             8.240E-07   AT NODE        457   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.214E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.476E-02   TIME AVG. MOMENT      6.412E-02
+ LARGEST RESIDUAL MOMENT            6.166E-08   AT NODE        774   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.481E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     9.124E-07   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.780    
+ STEP TIME COMPLETED       0.780    ,  TOTAL TIME COMPLETED        0.780    
+
+
+  INCREMENT    79 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 221.736E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 278.422E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.502       TIME AVG. FORCE       0.378    
+ LARGEST RESIDUAL FORCE             8.254E-07   AT NODE        361   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.205E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.493E-02   TIME AVG. MOMENT      6.438E-02
+ LARGEST RESIDUAL MOMENT            6.156E-08   AT NODE        774   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.480E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -9.228E-07   AT NODE         28   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.790    
+ STEP TIME COMPLETED       0.790    ,  TOTAL TIME COMPLETED        0.790    
+
+
+  INCREMENT    80 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 79.8534E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 185.614E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.503       TIME AVG. FORCE       0.380    
+ LARGEST RESIDUAL FORCE            -8.277E-07   AT NODE        779   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.203E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.510E-02   TIME AVG. MOMENT      6.464E-02
+ LARGEST RESIDUAL MOMENT            6.154E-08   AT NODE        774   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.479E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     9.128E-07   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.800    
+ STEP TIME COMPLETED       0.800    ,  TOTAL TIME COMPLETED        0.800    
+
+
+  INCREMENT    81 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 445.851E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 143.146E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.503       TIME AVG. FORCE       0.381    
+ LARGEST RESIDUAL FORCE             8.297E-07   AT NODE        827   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        4.933E-06   AT NODE         27   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.527E-02   TIME AVG. MOMENT      6.490E-02
+ LARGEST RESIDUAL MOMENT            6.150E-08   AT NODE        774   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.478E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -9.086E-07   AT NODE         28   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.810    
+ STEP TIME COMPLETED       0.810    ,  TOTAL TIME COMPLETED        0.810    
+
+
+  INCREMENT    82 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 38.1556E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 125.008E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.504       TIME AVG. FORCE       0.383    
+ LARGEST RESIDUAL FORCE            -8.318E-07   AT NODE        585   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.195E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.544E-02   TIME AVG. MOMENT      6.515E-02
+ LARGEST RESIDUAL MOMENT           -6.146E-08   AT NODE        480   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.478E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     9.043E-07   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.820    
+ STEP TIME COMPLETED       0.820    ,  TOTAL TIME COMPLETED        0.820    
+
+
+  INCREMENT    83 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 250.736E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 100.379E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.498       TIME AVG. FORCE       0.384    
+ LARGEST RESIDUAL FORCE             2.174E-05   AT NODE         10   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.777E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.561E-02   TIME AVG. MOMENT      6.540E-02
+ LARGEST RESIDUAL MOMENT           -4.098E-07   AT NODE        515   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.467E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.083E-05   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.830    
+ STEP TIME COMPLETED       0.830    ,  TOTAL TIME COMPLETED        0.830    
+
+
+  INCREMENT    84 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 795.888E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 177.923E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.499       TIME AVG. FORCE       0.385    
+ LARGEST RESIDUAL FORCE             2.950E-05   AT NODE          1   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -3.356E-06   AT NODE        335   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.577E-02   TIME AVG. MOMENT      6.564E-02
+ LARGEST RESIDUAL MOMENT           -5.566E-07   AT NODE        642   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.453E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.416E-05   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.840    
+ STEP TIME COMPLETED       0.840    ,  TOTAL TIME COMPLETED        0.840    
+
+
+  INCREMENT    85 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 60.8903E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 282.914E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.507       TIME AVG. FORCE       0.387    
+ LARGEST RESIDUAL FORCE             8.118E-07   AT NODE        844   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.099E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.594E-02   TIME AVG. MOMENT      6.588E-02
+ LARGEST RESIDUAL MOMENT            5.945E-08   AT NODE        774   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.452E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -9.822E-07   AT NODE        158   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.850    
+ STEP TIME COMPLETED       0.850    ,  TOTAL TIME COMPLETED        0.850    
+
+
+  INCREMENT    86 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 44.1249E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 180.992E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.507       TIME AVG. FORCE       0.388    
+ LARGEST RESIDUAL FORCE            -8.136E-07   AT NODE        779   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.113E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.610E-02   TIME AVG. MOMENT      6.611E-02
+ LARGEST RESIDUAL MOMENT           -5.939E-08   AT NODE        887   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.451E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -8.674E-07   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.860    
+ STEP TIME COMPLETED       0.860    ,  TOTAL TIME COMPLETED        0.860    
+
+
+  INCREMENT    87 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 502.675E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 224.833E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.508       TIME AVG. FORCE       0.390    
+ LARGEST RESIDUAL FORCE             8.156E-07   AT NODE        827   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.111E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.627E-02   TIME AVG. MOMENT      6.634E-02
+ LARGEST RESIDUAL MOMENT           -5.936E-08   AT NODE        822   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.450E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     8.452E-07   AT NODE         30   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.870    
+ STEP TIME COMPLETED       0.870    ,  TOTAL TIME COMPLETED        0.870    
+
+
+  INCREMENT    88 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 93.9557E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 11.6412E+15 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.509       TIME AVG. FORCE       0.391    
+ LARGEST RESIDUAL FORCE             8.175E-07   AT NODE        827   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.397E-05   AT NODE        822   DOF  2
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION    1.869E-09
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     8.643E-02   TIME AVG. MOMENT      6.657E-02
+ LARGEST RESIDUAL MOMENT            5.932E-08   AT NODE        580   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.449E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -8.415E-07   AT NODE         28   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.880    
+ STEP TIME COMPLETED       0.880    ,  TOTAL TIME COMPLETED        0.880    
+
+
+  INCREMENT    89 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 79.0466E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 333.091E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.510       TIME AVG. FORCE       0.392    
+ LARGEST RESIDUAL FORCE            -4.526E-08   AT NODE          1   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.093E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.659E-02   TIME AVG. MOMENT      6.680E-02
+ LARGEST RESIDUAL MOMENT            5.928E-08   AT NODE        144   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.448E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.142E-06   AT NODE        148   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.890    
+ STEP TIME COMPLETED       0.890    ,  TOTAL TIME COMPLETED        0.890    
+
+
+  INCREMENT    90 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 78.4554E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 226.857E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.510       TIME AVG. FORCE       0.394    
+ LARGEST RESIDUAL FORCE             4.936E-08   AT NODE         24   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.086E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.676E-02   TIME AVG. MOMENT      6.702E-02
+ LARGEST RESIDUAL MOMENT           -5.922E-08   AT NODE        822   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.448E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.216E-06   AT NODE        778   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.900    
+ STEP TIME COMPLETED       0.900    ,  TOTAL TIME COMPLETED        0.900    
+
+
+  INCREMENT    91 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 49.9474E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 481.116E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.511       TIME AVG. FORCE       0.395    
+ LARGEST RESIDUAL FORCE            -2.975E-08   AT NODE         10   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.097E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.692E-02   TIME AVG. MOMENT      6.724E-02
+ LARGEST RESIDUAL MOMENT            5.915E-08   AT NODE        774   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.447E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     8.306E-07   AT NODE         30   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.910    
+ STEP TIME COMPLETED       0.910    ,  TOTAL TIME COMPLETED        0.910    
+
+
+  INCREMENT    92 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 100.134E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 412.744E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.512       TIME AVG. FORCE       0.396    
+ LARGEST RESIDUAL FORCE            -2.979E-08   AT NODE          1   DOF  2
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -2.093E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.709E-02   TIME AVG. MOMENT      6.745E-02
+ LARGEST RESIDUAL MOMENT           -5.912E-08   AT NODE        366   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.446E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -8.271E-07   AT NODE         28   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.920    
+ STEP TIME COMPLETED       0.920    ,  TOTAL TIME COMPLETED        0.920    
+
+
+  INCREMENT    93 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 182.079E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 80.0444E+12 .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.513       TIME AVG. FORCE       0.397    
+ LARGEST RESIDUAL FORCE            -5.000E-06   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        8.653E-06   AT NODE        884   DOF  1
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.724E-02   TIME AVG. MOMENT      6.767E-02
+ LARGEST RESIDUAL MOMENT            5.844E-08   AT NODE        172   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.401E-03   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     4.514E-05   AT NODE         30   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -3.924E-08
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.930    
+ STEP TIME COMPLETED       0.930    ,  TOTAL TIME COMPLETED        0.930    
+
+
+  INCREMENT    94 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 378.442E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 818.691E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.321       TIME AVG. FORCE       0.397    
+ LARGEST RESIDUAL FORCE            -4.299E-05   AT NODE          1   DOF  1
+   INSTANCE:                                                                                 
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        6.443E-05   AT NODE        884   DOF  1
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION   -2.532E-07
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     8.738E-02   TIME AVG. MOMENT      6.788E-02
+ LARGEST RESIDUAL MOMENT           -1.729E-07   AT NODE        484   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.270E-03   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -1.315E-04   AT NODE        594   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION   -1.373E-07
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.940    
+ STEP TIME COMPLETED       0.940    ,  TOTAL TIME COMPLETED        0.940    
+
+
+  INCREMENT    95 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 41.9509E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 300.355E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.507       TIME AVG. FORCE       0.398    
+ LARGEST RESIDUAL FORCE            -3.171E-05   AT NODE        788   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        1.888E-06   AT NODE        449   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.751E-02   TIME AVG. MOMENT      6.808E-02
+ LARGEST RESIDUAL MOMENT           -6.859E-07   AT NODE        788   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.257E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     1.292E-05   AT NODE        466   DOF  6
+   INSTANCE: INST                                                                            
+ ESTIMATE OF ROTATION CORRECTION    8.344E-08
+ MOMENT    EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.950    
+ STEP TIME COMPLETED       0.950    ,  TOTAL TIME COMPLETED        0.950    
+
+
+  INCREMENT    96 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 53.3015E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 556.910E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.515       TIME AVG. FORCE       0.399    
+ LARGEST RESIDUAL FORCE            -1.865E-08   AT NODE        642   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.625E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.764E-02   TIME AVG. MOMENT      6.829E-02
+ LARGEST RESIDUAL MOMENT            4.452E-08   AT NODE        774   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.256E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     5.395E-07   AT NODE         30   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.960    
+ STEP TIME COMPLETED       0.960    ,  TOTAL TIME COMPLETED        0.960    
+
+
+  INCREMENT    97 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 265.830E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.30008E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.508       TIME AVG. FORCE       0.400    
+ LARGEST RESIDUAL FORCE             1.650E-05   AT NODE        480   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.172E-05   AT NODE         26   DOF  1
+   INSTANCE: INST                                                                            
+ ESTIMATE OF DISP.    CORRECTION    2.444E-08
+ FORCE     EQUILIB. ACCEPTED BASED ON SMALL RESIDUAL AND ESTIMATED CORRECTION
+
+ AVERAGE MOMENT                     8.777E-02   TIME AVG. MOMENT      6.849E-02
+ LARGEST RESIDUAL MOMENT           -1.786E-07   AT NODE        480   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.260E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     8.793E-06   AT NODE        480   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.970    
+ STEP TIME COMPLETED       0.970    ,  TOTAL TIME COMPLETED        0.970    
+
+
+  INCREMENT    98 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 62.9619E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 1.76843E+15.
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.509       TIME AVG. FORCE       0.401    
+ LARGEST RESIDUAL FORCE             1.057E-05   AT NODE        172   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.        2.231E-06   AT NODE        338   DOF  2
+   INSTANCE: INST                                                                            
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.790E-02   TIME AVG. MOMENT      6.868E-02
+ LARGEST RESIDUAL MOMENT            1.130E-07   AT NODE        608   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.261E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -5.263E-06   AT NODE        608   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.980    
+ STEP TIME COMPLETED       0.980    ,  TOTAL TIME COMPLETED        0.980    
+
+
+  INCREMENT    99 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =   0.0000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =   0.0000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 142.258E+12  .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 176.708E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.516       TIME AVG. FORCE       0.402    
+ LARGEST RESIDUAL FORCE             2.271E-06   AT NODE        823   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.632E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.803E-02   TIME AVG. MOMENT      6.888E-02
+ LARGEST RESIDUAL MOMENT           -2.139E-08   AT NODE        822   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION     -1.261E-03   AT NODE         27   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION    -5.956E-07   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED  0.990    
+ STEP TIME COMPLETED       0.990    ,  TOTAL TIME COMPLETED        0.990    
+
+
+  INCREMENT   100 STARTS. ATTEMPT NUMBER  1, TIME INCREMENT  1.000E-02
+
+  NUMBER OF EQUATIONS =      2693     NUMBER OF RHS =    1
+  NUMBER OF FLOATING PT. OPERATIONS =  1.90E+05
+
+     CHECK POINT   START OF SOLVER    
+
+     CHECK POINT  END OF SOLVER       
+
+       ELAPSED USER TIME (SEC)      =  0.10000    
+       ELAPSED SYSTEM TIME (SEC)    =   0.0000    
+       ELAPSED TOTAL CPU TIME (SEC) =  0.10000    
+       ELAPSED WALLCLOCK TIME (SEC) =          0
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 1 RATIO = 87.8685E+12 .
+ 
+
+ ***WARNING: SOLVER PROBLEM. NUMERICAL SINGULARITY WHEN PROCESSING NODE INST.15 
+             D.O.F. 2 RATIO = 307.664E+12  .
+
+               CONVERGENCE CHECKS FOR EQUILIBRIUM ITERATION     1
+
+
+ AVERAGE FORCE                      0.517       TIME AVG. FORCE       0.404    
+ LARGEST RESIDUAL FORCE             2.294E-06   AT NODE        607   DOF  1
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF DISP.        -9.000E-04   AT NODE          1   DOF  2
+   INSTANCE: {assembly node}                                                                 
+ LARGEST CORRECTION TO DISP.       -1.632E-06   AT NODE          1   DOF  1
+   INSTANCE: {assembly node}                                                                 
+          THE FORCE     EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ AVERAGE MOMENT                     8.816E-02   TIME AVG. MOMENT      6.907E-02
+ LARGEST RESIDUAL MOMENT            2.153E-08   AT NODE        774   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST INCREMENT OF ROTATION      1.260E-03   AT NODE         26   DOF  6
+   INSTANCE: INST                                                                            
+ LARGEST CORRECTION TO ROTATION     6.774E-07   AT NODE        352   DOF  6
+   INSTANCE: INST                                                                            
+          THE MOMENT    EQUILIBRIUM EQUATIONS HAVE CONVERGED
+
+ ITERATION SUMMARY FOR THE INCREMENT:   1 TOTAL ITERATIONS, OF WHICH
+   0 ARE SEVERE DISCONTINUITY ITERATIONS AND  1 ARE EQUILIBRIUM ITERATIONS.
+
+ TIME INCREMENT COMPLETED  1.000E-02,  FRACTION OF STEP COMPLETED   1.00    
+ STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         1.00    
+
+
+          THE ANALYSIS HAS BEEN COMPLETED
+
+
+
+     ANALYSIS SUMMARY:
+     TOTAL OF        100  INCREMENTS
+                       0  CUTBACKS IN AUTOMATIC INCREMENTATION
+                     102  ITERATIONS INCLUDING CONTACT ITERATIONS IF PRESENT
+                     102  PASSES THROUGH THE EQUATION SOLVER OF WHICH 
+                     102  INVOLVE MATRIX DECOMPOSITION, INCLUDING
+                       0  DECOMPOSITION(S) OF THE MASS MATRIX
+                       1  REORDERING OF EQUATIONS TO MINIMIZE WAVEFRONT
+                       0  ADDITIONAL RESIDUAL EVALUATIONS FOR LINE SEARCHES
+                       0  ADDITIONAL OPERATOR EVALUATIONS FOR LINE SEARCHES
+                       1  WARNING MESSAGES DURING USER INPUT PROCESSING
+                     204  WARNING MESSAGES DURING ANALYSIS
+                     204  ANALYSIS WARNINGS ARE NUMERICAL PROBLEM MESSAGES
+                       0  ANALYSIS WARNINGS ARE NEGATIVE EIGENVALUE MESSAGES
+                       0  ERROR MESSAGES
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =   5.8000    
+       SYSTEM TIME (SEC)    =  0.80000    
+       TOTAL CPU TIME (SEC) =   6.6000    
+       WALLCLOCK TIME (SEC) =         10

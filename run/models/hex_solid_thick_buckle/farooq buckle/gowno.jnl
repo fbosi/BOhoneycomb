@@ -1,0 +1,403 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.Model(modelType=STANDARD_EXPLICIT, name='hex_solid_thick_buckle')
+del mdb.models['Model-1']
+mdb.openStep(
+    'D:\\Temp\\kuszczak_i\\Studentship\\bayes-opt-for-abaqus\\run\\catia\\hex_solid_thick_bucle.stp'
+    , scaleFromFile=OFF)
+mdb.models['hex_solid_thick_buckle'].PartFromGeometryFile(combine=False, 
+    dimensionality=TWO_D_PLANAR, geometryFile=mdb.acis, name='HEX_JT_BUCKLE', 
+    scale=0.001, type=DEFORMABLE_BODY)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].ConvertToPrecise(
+    method=RECOMPUTE_GEOMETRY)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].checkGeometry()
+mdb.models['hex_solid_thick_buckle'].Material(name='ALUMINIUM')
+mdb.models['hex_solid_thick_buckle'].materials['ALUMINIUM'].Elastic(table=((
+    70000.0, 0.3), ))
+mdb.models['hex_solid_thick_buckle'].materials['ALUMINIUM'].Plastic(table=((
+    130.0, 0.0), ))
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].Set(faces=
+    mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].faces.getSequenceFromMask(
+    mask=('[#1 ]', ), ), name='UNIT_CELL_TESSELATION')
+mdb.models['hex_solid_thick_buckle'].HomogeneousSolidSection(material=
+    'ALUMINIUM', name='SECTION', thickness=1.0)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].SectionAssignment(
+    region=
+    mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].sets['UNIT_CELL_TESSELATION']
+    , sectionName='SECTION', thicknessAssignment=FROM_SECTION)
+mdb.models['hex_solid_thick_buckle'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Instance(dependent=ON, name=
+    'INST', part=mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'])
+mdb.models['hex_solid_thick_buckle'].BuckleStep(maxEigen=5.0, name='BuckleStep'
+    , previous='Initial', vectors=10)
+#* TypeError: not all required arguments specified; expected 3, got 2
+mdb.Model(modelType=STANDARD_EXPLICIT, name='hex_solid_thick_buckle')
+mdb.openStep(
+    'D:\\Temp\\kuszczak_i\\Studentship\\bayes-opt-for-abaqus\\run\\catia\\hex_solid_thick_bucle.stp'
+    , scaleFromFile=OFF)
+mdb.models['hex_solid_thick_buckle'].PartFromGeometryFile(combine=False, 
+    dimensionality=TWO_D_PLANAR, geometryFile=mdb.acis, name='HEX_JT_BUCKLE', 
+    scale=0.001, type=DEFORMABLE_BODY)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].ConvertToPrecise(
+    method=RECOMPUTE_GEOMETRY)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].checkGeometry()
+mdb.models['hex_solid_thick_buckle'].Material(name='ALUMINIUM')
+mdb.models['hex_solid_thick_buckle'].materials['ALUMINIUM'].Elastic(table=((
+    70000.0, 0.3), ))
+mdb.models['hex_solid_thick_buckle'].materials['ALUMINIUM'].Plastic(table=((
+    130.0, 0.0), ))
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].Set(faces=
+    mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].faces.getSequenceFromMask(
+    mask=('[#1 ]', ), ), name='UNIT_CELL_TESSELATION')
+mdb.models['hex_solid_thick_buckle'].HomogeneousSolidSection(material=
+    'ALUMINIUM', name='SECTION', thickness=1.0)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].SectionAssignment(
+    region=
+    mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].sets['UNIT_CELL_TESSELATION']
+    , sectionName='SECTION', thicknessAssignment=FROM_SECTION)
+mdb.models['hex_solid_thick_buckle'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Instance(dependent=ON, name=
+    'INST', part=mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'])
+mdb.models['hex_solid_thick_buckle'].BuckleStep(maxEigen=5.0, name='BuckleStep'
+    , numEigen=1, previous='Initial', vectors=10)
+mdb.models['hex_solid_thick_buckle'].StaticStep(initialInc=0.01, maxInc=0.01, 
+    maxNumInc=1000, minInc=0.01, name='StaticStep', previous='Initial')
+mdb.models['hex_solid_thick_buckle'].steps['StaticStep'].setValues(nlgeom=ON)
+mdb.models['hex_solid_thick_buckle'].fieldOutputRequests['F-Output-1'].setValues(
+    variables=('S', 'U', 'EVOL', 'RF'))
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].seedPart(
+    deviationFactor=0.1, minSizeFactor=0.1, size=0.0087704152905584334)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].generateMesh()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    4.28682574873297, 6.6, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='REF', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[4], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(0, 1.5, 
+    0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n1', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[6], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-1', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#2000 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    1.299038105676658, 0.75, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n2', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[9], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-2', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#200 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    1.299038105676658, -0.75, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n3', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[12], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-3', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#20 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(0, 
+    -1.5, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n4', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[15], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-4', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#2 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    -1.299038105676658, -0.75, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n5', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[18], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-5', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#200000 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    -1.299038105676658, 0.75, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n6', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[21], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-6', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#20000 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-1', terms=((1.0, 
+    'n4', 1), (-1.0, 'n1', 1)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-2', terms=((1.0, 
+    'n5', 1), (-1.0, 'n2', 1), (1.0, 'REF', 1)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-3', terms=((1.0, 
+    'n6', 1), (-1.0, 'n3', 1), (1.0, 'REF', 1)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-4', terms=((1.0, 
+    'n4', 2), (-1.0, 'n1', 2), (1.0, 'REF', 2)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-5', terms=((1.0, 
+    'n5', 2), (-1.0, 'n2', 2), (0.5, 'REF', 2)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-6', terms=((1.0, 
+    'n6', 2), (-1.0, 'n3', 2), (-0.5, 'REF', 2)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-7', terms=((1.0, 
+    'n4', 6), (-1.0, 'n1', 6)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-8', terms=((1.0, 
+    'n5', 6), (-1.0, 'n2', 6)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-9', terms=((1.0, 
+    'n6', 6), (-1.0, 'n3', 6)))
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n1'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-1'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-1'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n2'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-2'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-2'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n3'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-3'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-3'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n4'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-4'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-4'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n5'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-5'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-5'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n6'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-6'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-6'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].ConcentratedForce(cf2=-1.0, 
+    createStepName='BuckleStep', distributionType=UNIFORM, field='', localCsys=
+    None, name='Load-1', region=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['REF'])
+mdb.models['hex_solid_thick_buckle'].DisplacementBC(amplitude=UNSET, 
+    createStepName='StaticStep', distributionType=UNIFORM, name='BC-1', region=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['REF'], u1=UNSET, 
+    u2=-0.06, ur3=UNSET)
+mdb.Job(model='hex_solid_thick_buckle', name='hex_solid_thick_buckle_test')
+mdb.jobs['hex_solid_thick_buckle_test'].submit(consistencyChecking=ON)
+mdb.jobs['hex_solid_thick_buckle_test'].waitForCompletion()
+mdb.jobs['hex_solid_thick_buckle_test']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'hex_solid_thick_buckle_test'})
+mdb.jobs['hex_solid_thick_buckle_test']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'hex_solid_thick_buckle_test'})
+mdb.Model(modelType=STANDARD_EXPLICIT, name='hex_solid_thick_buckle')
+mdb.openStep(
+    'D:\\Temp\\kuszczak_i\\Studentship\\bayes-opt-for-abaqus\\run\\catia\\hex_solid_thick_bucle.stp'
+    , scaleFromFile=OFF)
+mdb.models['hex_solid_thick_buckle'].PartFromGeometryFile(combine=False, 
+    dimensionality=TWO_D_PLANAR, geometryFile=mdb.acis, name='HEX_JT_BUCKLE', 
+    scale=0.001, type=DEFORMABLE_BODY)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].ConvertToPrecise(
+    method=RECOMPUTE_GEOMETRY)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].checkGeometry()
+mdb.models['hex_solid_thick_buckle'].Material(name='ALUMINIUM')
+mdb.models['hex_solid_thick_buckle'].materials['ALUMINIUM'].Elastic(table=((
+    70000.0, 0.3), ))
+mdb.models['hex_solid_thick_buckle'].materials['ALUMINIUM'].Plastic(table=((
+    130.0, 0.0), ))
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].Set(faces=
+    mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].faces.getSequenceFromMask(
+    mask=('[#1 ]', ), ), name='UNIT_CELL_TESSELATION')
+mdb.models['hex_solid_thick_buckle'].HomogeneousSolidSection(material=
+    'ALUMINIUM', name='SECTION', thickness=1.0)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].SectionAssignment(
+    region=
+    mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].sets['UNIT_CELL_TESSELATION']
+    , sectionName='SECTION', thicknessAssignment=FROM_SECTION)
+mdb.models['hex_solid_thick_buckle'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Instance(dependent=ON, name=
+    'INST', part=mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'])
+mdb.models['hex_solid_thick_buckle'].BuckleStep(maxEigen=5.0, name='BuckleStep'
+    , numEigen=1, previous='Initial', vectors=10)
+mdb.models['hex_solid_thick_buckle'].StaticStep(initialInc=0.01, maxInc=0.01, 
+    maxNumInc=1000, minInc=0.01, name='StaticStep', previous='Initial')
+mdb.models['hex_solid_thick_buckle'].steps['StaticStep'].setValues(nlgeom=ON)
+mdb.models['hex_solid_thick_buckle'].fieldOutputRequests['F-Output-1'].setValues(
+    variables=('S', 'U', 'EVOL', 'RF'))
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].seedPart(
+    deviationFactor=0.1, minSizeFactor=0.1, size=0.0087704152905584334)
+mdb.models['hex_solid_thick_buckle'].parts['HEX_JT_BUCKLE'].generateMesh()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    4.28682574873297, 6.6, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='REF', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[4], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(0, 1.5, 
+    0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n1', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[6], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-1', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#2000 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    1.299038105676658, 0.75, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n2', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[9], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-2', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#200 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    1.299038105676658, -0.75, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n3', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[12], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-3', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#20 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(0, 
+    -1.5, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n4', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[15], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-4', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#2 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    -1.299038105676658, -0.75, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n5', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[18], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-5', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#200000 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.ReferencePoint(point=(
+    -1.299038105676658, 0.75, 0))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Set(name='n6', 
+    referencePoints=(
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.referencePoints[21], ))
+mdb.models['hex_solid_thick_buckle'].rootAssembly.regenerate()
+mdb.models['hex_solid_thick_buckle'].rootAssembly.Surface(name='surf-6', 
+    side1Edges=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.instances['INST'].edges.getSequenceFromMask(
+    mask=('[#20000 ]', ), ))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-1', terms=((1.0, 
+    'n4', 1), (-1.0, 'n1', 1)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-2', terms=((1.0, 
+    'n5', 1), (-1.0, 'n2', 1), (1.0, 'REF', 1)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-3', terms=((1.0, 
+    'n6', 1), (-1.0, 'n3', 1), (1.0, 'REF', 1)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-4', terms=((1.0, 
+    'n4', 2), (-1.0, 'n1', 2), (1.0, 'REF', 2)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-5', terms=((1.0, 
+    'n5', 2), (-1.0, 'n2', 2), (0.5, 'REF', 2)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-6', terms=((1.0, 
+    'n6', 2), (-1.0, 'n3', 2), (-0.5, 'REF', 2)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-7', terms=((1.0, 
+    'n4', 6), (-1.0, 'n1', 6)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-8', terms=((1.0, 
+    'n5', 6), (-1.0, 'n2', 6)))
+mdb.models['hex_solid_thick_buckle'].Equation(name='Equation-9', terms=((1.0, 
+    'n6', 6), (-1.0, 'n3', 6)))
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n1'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-1'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-1'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n2'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-2'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-2'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n3'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-3'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-3'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n4'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-4'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-4'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n5'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-5'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-5'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].Coupling(controlPoint=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['n6'], couplingType=
+    KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, name='Coupling-6'
+    , surface=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.surfaces['surf-6'], u1=ON
+    , u2=ON, ur3=ON)
+mdb.models['hex_solid_thick_buckle'].ConcentratedForce(cf2=-10.0, 
+    createStepName='BuckleStep', distributionType=UNIFORM, field='', localCsys=
+    None, name='Load-1', region=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['REF'])
+mdb.models['hex_solid_thick_buckle'].DisplacementBC(amplitude=UNSET, 
+    createStepName='StaticStep', distributionType=UNIFORM, name='BC-1', region=
+    mdb.models['hex_solid_thick_buckle'].rootAssembly.sets['REF'], u1=UNSET, 
+    u2=-0.06, ur3=UNSET)
+mdb.Job(model='hex_solid_thick_buckle', name='hex_solid_thick_buckle_test')
+mdb.jobs['hex_solid_thick_buckle_test'].submit(consistencyChecking=ON)
+mdb.jobs['hex_solid_thick_buckle_test'].waitForCompletion()
+mdb.jobs['hex_solid_thick_buckle_test']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'hex_solid_thick_buckle_test'})
+mdb.jobs['hex_solid_thick_buckle_test']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'hex_solid_thick_buckle_test'})
+mdb.models['hex_solid_thick_buckle'].steps['BuckleStep'].setValues(maxEigen=
+    None)
+mdb.models['hex_solid_thick_buckle'].loads['Load-1'].setValues(cf2=-100.0, 
+    distributionType=UNIFORM, field='')
+mdb.models['hex_solid_thick_buckle'].loads['Load-1'].setValues(cf2=1.0, 
+    distributionType=UNIFORM, field='')
+mdb.models['hex_solid_thick_buckle'].loads['Load-1'].setValues(cf2=-1.0, 
+    distributionType=UNIFORM, field='')
+# Save by kuszczak_i on 2022_03_25-16.37.32; build 2018 2017_11_07-17.21.41 127140

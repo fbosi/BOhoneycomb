@@ -1,0 +1,48 @@
+---
+model_name: 'hex_solid_thick'
+script_name: 'hex_solid_thick'
+ 
+optimisation:
+ experiment_name: 'hex_thick_opt'
+ multiobjective: True
+ 
+ # Models available: 
+ # GPEI - Gaussian Processes with Expected Improvement,
+ # GPKG - GP with Knowledge Gradient
+ # GPMES - GP with Maximum Entropy Search
+ 
+ model: 'GPEI'
+ num_of_iters: 30
+ num_sobol_steps: 10
+
+ num_of_params: 2 
+ uniform_params: False 
+ 
+ up_bound:
+ lo_bound:
+ 
+ parameters:
+  - name: 'eta'
+    type: 'range'
+    bounds: [0.1,0.95]
+    value_type: 'float'
+  - name: 'xi'
+    type: 'range'
+    bounds: [0.1,0.95]
+    value_type: 'float'
+    
+ single:
+    objective_metric: 'stiffness_ratio'
+    minimize: False
+    
+ multi:
+    objective_metrics:
+    - name: 'stiffness_ratio'
+      minimize: False
+      threshold: 1.0
+    - name: 'strength_ratio'
+      minimize: False
+      threshold: 1.0 
+        
+ outcome_constraints: []
+ constraint_metrics: []

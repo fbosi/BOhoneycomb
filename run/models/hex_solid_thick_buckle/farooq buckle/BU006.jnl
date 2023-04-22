@@ -1,0 +1,104 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['Job-BU005'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['Job-BU005']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'WIN-1', 'handle': 0, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\Temp\\kuszczak_i\\Studentship\\bayes-opt-for-abaqus\\run\\models\\hex_solid_thick_buckle\\farooq buckle\\Job-BU005.odb', 
+    'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'WIN-1', 'handle': 36492, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'Job-BU005', 'memory': 30.0})
+mdb.jobs['Job-BU005']._Message(PHYSICAL_MEMORY, {'phase': STANDARD_PHASE, 
+    'physical_memory': 523879.0, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(MINIMUM_MEMORY, {'minimum_memory': 23.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(JOB_COMPLETED, {
+    'time': 'Sat Mar 12 16:24:32 2022', 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005'].submit(consistencyChecking=OFF)
+mdb.jobs['Job-BU005']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'WIN-1', 'handle': 0, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\Temp\\kuszczak_i\\Studentship\\bayes-opt-for-abaqus\\run\\models\\hex_solid_thick_buckle\\farooq buckle\\Job-BU005.odb', 
+    'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'WIN-1', 'handle': 84420, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'Job-BU005', 'memory': 54.0})
+mdb.jobs['Job-BU005']._Message(PHYSICAL_MEMORY, {'phase': STANDARD_PHASE, 
+    'physical_memory': 523879.0, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(MINIMUM_MEMORY, {'minimum_memory': 24.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'Job-BU005', 'memory': 57.0})
+mdb.jobs['Job-BU005']._Message(PHYSICAL_MEMORY, {'phase': STANDARD_PHASE, 
+    'physical_memory': 523879.0, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(MINIMUM_MEMORY, {'minimum_memory': 27.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 4, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 5, 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(STATUS, {'totalTime': 0.0, 'attempts': 1, 
+    'timeIncrement': 1e-36, 'increment': 1, 'stepTime': 1e-36, 'step': 1, 
+    'jobName': 'Job-BU005', 'severe': 0, 'iterations': 0, 
+    'phase': STANDARD_PHASE, 'equilibrium': 0})
+mdb.jobs['Job-BU005']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-BU005'})
+mdb.jobs['Job-BU005']._Message(JOB_COMPLETED, {
+    'time': 'Sat Mar 12 16:24:53 2022', 'jobName': 'Job-BU005'})
+#* IOError: 
+#* D:/Temp/kuszczak_i/Studentship/bayes-opt-for-abaqus/run/models/hex_solid_thick_buckle/farooq 
+#* buckle/BU005.cae: Permission denied
+#* IOError: 
+#* D:/Temp/kuszczak_i/Studentship/bayes-opt-for-abaqus/run/models/hex_solid_thick_buckle/farooq 
+#* buckle/BU005.cae: Permission denied
+# Save by kuszczak_i on 2022_03_12-16.28.02; build 2018 2017_11_07-17.21.41 127140

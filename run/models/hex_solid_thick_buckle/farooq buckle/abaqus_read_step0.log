@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+Translator Name    : Spatial InterOp Connect ( Version : 2017 1.0.2)
+System Name        : Windows_NT
+Machine Name       : WIN-1
+User Name          : kuszczak_i
+Source System      : STEP
+Destination System : ACIS
+Input File         : D:\Temp\kuszczak_i\Studentship\bayes-opt-for-abaqus\run\models\hex_solid_thick_buckle\farooq buckle\hex_solid_thick.stp
+Output File        : C:\Users\KUSZCZ~1\AppData\Local\Temp\SPAXTemp-P54744-T58076-2_SPAIop_1_Doc.sab
+Start Time         : Sat Mar 12 17:37:48 2022
+
+--------------------------------------------------------------------------------
+Message : === Translation Options ===
+Message : TranslateAllClass2SheetsInSingleBody : true
+Message : TranslateAttributes : true
+Message : Representation : BRep+Assembly
+Message : Healing : true
+Message : ===========================
+-------------------------Source File Header Information-------------------------
+Modification Date        : 2022-03-12T17:37:47+00:00
+File Name                : D:\\Temp\\kuszczak_i\\Studentship\\bayes-opt-for-abaqus\\run\\models\\hex_solid_thick_buckle\\farooq buckle\\hex_solid_thick.stp
+Author                   : 'none'
+Organization             : 'none'
+Source System            : CATIA V5 STEP AP203 CATIA Version 5-6 Release 2015
+Version                  : AP203
+Authorization            : none
+File Description         : 'CATIA V5 STEP Exchange'
+Implementation Level     : 2;1
+File Schema Name         : 'CONFIG_CONTROL_DESIGN'
+Document Type            : Part
+Units                    : MILLIMETER
+Format Type              : STEP
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Source Document Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start BRep
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Source Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Source Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Target Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End BRep
+------------------------Representation Conversion Summary-----------------------
+No. of Acorn Bodies                       :    0
+No. of Mixed Bodies                       :    0
+No. of Solid Bodies                       :    8
+No. of Wire Bodies                        :    2
+No. of Free Surfaces                      :    0
+No. of Free Curves                        :    0
+No. of Sheet Bodies                       :    0
+No. of Free Points                        :    0
+--------------------------------------------------------------------------------
+BRep Conversion Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start DocumentFeature
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Source Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Source Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+DocumentFeature Target Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End DocumentFeature
+------------------------Representation Conversion Summary-----------------------
+No. of Selection Sets                     :    0
+No. of Working Coordinate Systems         :    0
+No. of Associative Groups                 :    0
+No. of Layer Filters                      :    0
+--------------------------------------------------------------------------------
+DocumentFeature Conversion Result : No Entity to Translate
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+---------------------------Document Conversion Summary--------------------------
+No. of Items of DocumentFeature Representation :    0
+No. of Items of BRep Representation            :    10
+--------------------------------------------------------------------------------
+Message : Setting save mode for ACIS file based on the file extension
+Output File "C:\Users\KUSZCZ~1\AppData\Local\Temp\SPAXTemp-P54744-T58076-2_SPAIop_1_Doc.sab" is Successfully Written
+--------------------------------------------------------------------------------
+Finish Time : Sat Mar 12 17:37:48 2022
+
+--------------------------------------------------------------------------------
+Translation Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

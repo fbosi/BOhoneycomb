@@ -1,0 +1,49 @@
+---
+model_name: 'hex_solid_thick_buckle'
+script_name: 'hex_solid_thick_buckle'
+ 
+optimisation:
+ experiment_name: 'solid_hex_thick_opt'
+ multiobjective: True
+ 
+ # Models available: 
+ # GPEI - Gaussian Processes with Expected Improvement,
+ # GPKG - GP with Knowledge Gradient
+ # GPMES - GP with Maximum Entropy Search
+ 
+ model: 'MOO'
+ num_of_iters: 200
+ num_sobol_steps: 20
+
+ num_of_params: 2 
+ uniform_params: False 
+ 
+ up_bound:
+ lo_bound:
+ 
+ parameters:
+  - name: 'eta'
+    type: 'range'
+    bounds: [0.1,0.95]
+    value_type: 'float'
+  - name: 'xi'
+    type: 'range'
+    bounds: [0.1,0.95]
+    value_type: 'float'
+    
+ single:
+    objective_metric: 'stiffness_ratio'
+    minimize: False
+    
+ multi:
+    objective_metrics:
+    - name: 'stiffness_ratio'
+      minimize: False
+      threshold: 0.9
+    - name: 'stress_ratio'
+      minimize: False
+      threshold: 0.9
+        
+ outcome_constraints: []
+ constraint_metrics: []
+ parameter_constraints: [0.078<=(1-xi)*(eta*xi+(1-xi))] #this is specific to the relative density of 0.15. LHS is 1-sqrt(1-rd)

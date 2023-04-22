@@ -1,0 +1,52 @@
+---
+model_name: 'hex_solid_tanh_buckle'
+script_name: 'hex_solid_tanh_buckle'
+ 
+optimisation:
+ experiment_name: 'solid_hex_tanh_opt'
+ multiobjective: True
+ 
+ # Models available: 
+ # GPEI - Gaussian Processes with Expected Improvement,
+ # GPKG - GP with Knowledge Gradient
+ # GPMES - GP with Maximum Entropy Search
+ 
+ model: 'MOO'
+ num_of_iters: 100
+ num_sobol_steps: 20
+
+ num_of_params: 3 
+ uniform_params: False 
+ 
+ up_bound:
+ lo_bound:
+ 
+ parameters:
+  - name: 'eta'
+    type: 'range'
+    bounds: [0.1,0.95]
+    value_type: 'float'
+  - name: 'xi'
+    type: 'range'
+    bounds: [0.1,0.95]
+    value_type: 'float'
+  - name: 'gamma'
+    type: 'range'
+    bounds: [0.3,0.8]
+    value_type: 'float'
+        
+ single:
+    objective_metric: 'stiffness_ratio'
+    minimize: False
+    
+ multi:
+    objective_metrics:
+    - name: 'stiffness_ratio'
+      minimize: False
+      threshold: 0.9
+    - name: 'stress_ratio'
+      minimize: False
+      threshold: 0.9
+        
+ outcome_constraints: []
+ constraint_metrics: []

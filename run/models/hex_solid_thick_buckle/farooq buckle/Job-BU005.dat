@@ -1,0 +1,465 @@
+1
+
+   Abaqus 3DEXPERIENCE R2018x                                  Date 12-Mar-2022   Time 16:24:42
+   For use by UNIVERSITY COLLEGE LONDON under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes SIMULIA Corp.
+                           1301 Atwood Avenue, Suite 101W
+                              Johnston, RI 02919, USA
+ 
+
+
+                   The Abaqus Software is available only under license
+                   from Dassault Systemes or its subsidiary and may be
+                   used or reproduced only in accordance with the terms
+                   of such license.
+ 
+                          On machine WIN-1 
+                          you are authorized to run
+                          Abaqus/Standard until 30-Sep-2022
+
+                          Your site id is: 200000000024459 
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      http://www.3ds.com/products/simulia/locations/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *               Abaqus 3DEXPERIENCE R2018x                * 
+                *                                                         * 
+                *          BUILD ID: 2017_11_07-17.21.41 127140           * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using                         * 
+                *  release 3DEXPERIENCE R2018x manuals                    * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *   This program may not be used for commercial purposes  * 
+                *           without payment of a commercial fee.          * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *Heading
+  *Node
+  *Element, type=CPS3
+  *Element, type=CPS4R
+  *Element, type=CPS3
+  *Element, type=CPS4R
+  *Element, type=CPS3
+  *Element, type=CPS4R
+  *Element, type=CPS3
+  *Element, type=CPS4R
+  *Element, type=CPS3
+  *Element, type=CPS4R
+  *Element, type=CPS3
+  *Element, type=CPS4R
+  *Element, type=CPS3
+  *Element, type=CPS4R
+  *Element, type=CPS3
+  *Element, type=CPS4R
+  *Nset, nset=ASSEMBLY_PART2-1_SET-1
+  *Elset, elset=ASSEMBLY_PART2-1_SET-1
+  *Node
+  *Nset, nset=ASSEMBLY_N1A
+  *Nset, nset=ASSEMBLY_N1B
+  *Nset, nset=ASSEMBLY_N1C
+  *Nset, nset=ASSEMBLY_N1D
+  *Nset, nset=ASSEMBLY_N2A
+  *Nset, nset=ASSEMBLY_N2B
+  *Nset, nset=ASSEMBLY_N2C
+  *Nset, nset=ASSEMBLY_N2D
+  *Nset, nset=ASSEMBLY_N3A
+  *Nset, nset=ASSEMBLY_N3B
+  *Nset, nset=ASSEMBLY_N3C
+  *Nset, nset=ASSEMBLY_N3D
+  *Nset, nset=ASSEMBLY_N4A
+  *Nset, nset=ASSEMBLY_N4B
+  *Nset, nset=ASSEMBLY_N4C
+  *Nset, nset=ASSEMBLY_N4D
+  *Nset, nset=ASSEMBLY_REF
+  *Nset, nset=ASSEMBLY_SET-8
+  *Elset, elset=ASSEMBLY__S_SURF-10_S4
+  *Elset, elset=ASSEMBLY__S_SURF-11_S4
+  *Elset, elset=ASSEMBLY__S_SURF-12_S3
+  *Elset, elset=ASSEMBLY__S_SURF-13_S4
+  *Elset, elset=ASSEMBLY__S_SURF-14_S3
+  *Elset, elset=ASSEMBLY__S_SURF-15_S4
+  *Elset, elset=ASSEMBLY__S_SURF-16_S4
+  *Elset, elset=ASSEMBLY__S_SURF-1_S4
+  *Elset, elset=ASSEMBLY__S_SURF-2_S4
+  *Elset, elset=ASSEMBLY__S_SURF-3_S3
+  *Elset, elset=ASSEMBLY__S_SURF-4_S4
+  *Elset, elset=ASSEMBLY__S_SURF-5_S4
+  *Elset, elset=ASSEMBLY__S_SURF-6_S4
+  *Elset, elset=ASSEMBLY__S_SURF-7_S4
+  *Elset, elset=ASSEMBLY__S_SURF-8_S3
+  *Elset, elset=ASSEMBLY__S_SURF-9_S4
+  *material, name=MATERIAL-1
+  *elastic
+  *solidsection, elset=ASSEMBLY_PART2-1_SET-1, material=MATERIAL-1
+  *solidsection, elset=ASSEMBLY_PART2-1_SET-1, material=MATERIAL-1
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-2
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-4
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-5
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-6
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-7
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-8
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-9
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-10
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-11
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-12
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-13
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-14
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-15
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-16
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-2
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-3
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-4
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-5
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-6
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-7
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-8
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-9
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-10
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-11
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-12
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-13
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-14
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-15
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-16
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-1, refnode=ASSEMBLY_N1A, surface=ASSEMBLY_S_SURF-1
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-2, refnode=ASSEMBLY_N1B, surface=ASSEMBLY_S_SURF-2
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-3, refnode=ASSEMBLY_N1C, surface=ASSEMBLY_S_SURF-3
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-4, refnode=ASSEMBLY_N1D, surface=ASSEMBLY_S_SURF-4
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-5, refnode=ASSEMBLY_N2A, surface=ASSEMBLY_S_SURF-5
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-6, refnode=ASSEMBLY_N2B, surface=ASSEMBLY_S_SURF-6
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-7, refnode=ASSEMBLY_N2C, surface=ASSEMBLY_S_SURF-7
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-8, refnode=ASSEMBLY_N2D, surface=ASSEMBLY_S_SURF-8
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-9, refnode=ASSEMBLY_N4A, surface=ASSEMBLY_S_SURF-9
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-10, refnode=ASSEMBLY_N4B, surface=ASSEMBLY_S_SURF-10
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-11, refnode=ASSEMBLY_N4C, surface=ASSEMBLY_S_SURF-11
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-12, refnode=ASSEMBLY_N4D, surface=ASSEMBLY_S_SURF-12
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-13, refnode=ASSEMBLY_N3A, surface=ASSEMBLY_S_SURF-13
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-14, refnode=ASSEMBLY_N3B, surface=ASSEMBLY_S_SURF-14
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-15, refnode=ASSEMBLY_N3C, surface=ASSEMBLY_S_SURF-15
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-16, refnode=ASSEMBLY_N3D, surface=ASSEMBLY_S_SURF-16
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-1, refnode=ASSEMBLY_N1A, surface=ASSEMBLY_S_SURF-1
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-2, refnode=ASSEMBLY_N1B, surface=ASSEMBLY_S_SURF-2
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-3, refnode=ASSEMBLY_N1C, surface=ASSEMBLY_S_SURF-3
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-4, refnode=ASSEMBLY_N1D, surface=ASSEMBLY_S_SURF-4
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-5, refnode=ASSEMBLY_N2A, surface=ASSEMBLY_S_SURF-5
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-6, refnode=ASSEMBLY_N2B, surface=ASSEMBLY_S_SURF-6
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-7, refnode=ASSEMBLY_N2C, surface=ASSEMBLY_S_SURF-7
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-8, refnode=ASSEMBLY_N2D, surface=ASSEMBLY_S_SURF-8
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-9, refnode=ASSEMBLY_N4A, surface=ASSEMBLY_S_SURF-9
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-10, refnode=ASSEMBLY_N4B, surface=ASSEMBLY_S_SURF-10
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-11, refnode=ASSEMBLY_N4C, surface=ASSEMBLY_S_SURF-11
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-12, refnode=ASSEMBLY_N4D, surface=ASSEMBLY_S_SURF-12
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-13, refnode=ASSEMBLY_N3A, surface=ASSEMBLY_S_SURF-13
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-14, refnode=ASSEMBLY_N3B, surface=ASSEMBLY_S_SURF-14
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-15, refnode=ASSEMBLY_N3C, surface=ASSEMBLY_S_SURF-15
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-16, refnode=ASSEMBLY_N3D, surface=ASSEMBLY_S_SURF-16
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-1, refnode=ASSEMBLY_N1A, surface=ASSEMBLY_S_SURF-1
+  *kinematic
+
+ ***WARNING: WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY 
+             A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS 
+             FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING 
+             MPCS, RIGID BODIES, ETC.
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-2, refnode=ASSEMBLY_N1B, surface=ASSEMBLY_S_SURF-2
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-3, refnode=ASSEMBLY_N1C, surface=ASSEMBLY_S_SURF-3
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-4, refnode=ASSEMBLY_N1D, surface=ASSEMBLY_S_SURF-4
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-5, refnode=ASSEMBLY_N2A, surface=ASSEMBLY_S_SURF-5
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-6, refnode=ASSEMBLY_N2B, surface=ASSEMBLY_S_SURF-6
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-7, refnode=ASSEMBLY_N2C, surface=ASSEMBLY_S_SURF-7
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-8, refnode=ASSEMBLY_N2D, surface=ASSEMBLY_S_SURF-8
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-9, refnode=ASSEMBLY_N4A, surface=ASSEMBLY_S_SURF-9
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-10, refnode=ASSEMBLY_N4B, surface=ASSEMBLY_S_SURF-10
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-11, refnode=ASSEMBLY_N4C, surface=ASSEMBLY_S_SURF-11
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-12, refnode=ASSEMBLY_N4D, surface=ASSEMBLY_S_SURF-12
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-13, refnode=ASSEMBLY_N3A, surface=ASSEMBLY_S_SURF-13
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-14, refnode=ASSEMBLY_N3B, surface=ASSEMBLY_S_SURF-14
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-15, refnode=ASSEMBLY_N3C, surface=ASSEMBLY_S_SURF-15
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-16, refnode=ASSEMBLY_N3D, surface=ASSEMBLY_S_SURF-16
+  *kinematic
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-1, refnode=ASSEMBLY_N1A, surface=ASSEMBLY_S_SURF-1
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-2, refnode=ASSEMBLY_N1B, surface=ASSEMBLY_S_SURF-2
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-3, refnode=ASSEMBLY_N1C, surface=ASSEMBLY_S_SURF-3
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-4, refnode=ASSEMBLY_N1D, surface=ASSEMBLY_S_SURF-4
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-5, refnode=ASSEMBLY_N2A, surface=ASSEMBLY_S_SURF-5
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-6, refnode=ASSEMBLY_N2B, surface=ASSEMBLY_S_SURF-6
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-7, refnode=ASSEMBLY_N2C, surface=ASSEMBLY_S_SURF-7
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-8, refnode=ASSEMBLY_N2D, surface=ASSEMBLY_S_SURF-8
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-9, refnode=ASSEMBLY_N4A, surface=ASSEMBLY_S_SURF-9
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-10, refnode=ASSEMBLY_N4B, surface=ASSEMBLY_S_SURF-10
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-11, refnode=ASSEMBLY_N4C, surface=ASSEMBLY_S_SURF-11
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-12, refnode=ASSEMBLY_N4D, surface=ASSEMBLY_S_SURF-12
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-13, refnode=ASSEMBLY_N3A, surface=ASSEMBLY_S_SURF-13
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-14, refnode=ASSEMBLY_N3B, surface=ASSEMBLY_S_SURF-14
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-15, refnode=ASSEMBLY_N3C, surface=ASSEMBLY_S_SURF-15
+  *coupling, constraintname=ASSEMBLY_CONSTRAINT-16, refnode=ASSEMBLY_N3D, surface=ASSEMBLY_S_SURF-16
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *equation
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-1
+  *surface, type=ELEMENT, name=ASSEMBLY_S_SURF-2
+
+ ***NOTE: DUE TO EXCESSIVE REPORTING, THE ECHO OF THE *SURFACE OPTION IS BEING 
+          SUPPRESSED.
+  *output, field, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, field, variable=PRESELECT
+
+ ***WARNING: MPCS (EXTERNAL or INTERNAL, including those generated from rigid 
+             body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL 
+             ACTIVATE ADDITIONAL DEGREES OF FREEDOM
+  *Step, name=Step-1, nlgeom=NO, perturbation
+  *output, field, variable=PRESELECT
+  *Step, name=Step-1, nlgeom=NO, perturbation
+  *Step, name=Step-1, nlgeom=NO, perturbation
+  *buckle
+  *output, field, variable=PRESELECT
+  *endstep
+  *Step, name=Step-1, nlgeom=NO, perturbation
+  *buckle
+  *buckle
+  *cload
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                  8913
+          NUMBER OF ELEMENTS DEFINED BY THE USER AND *TIE        8905
+          NUMBER OF NODES IS                                    13718
+          NUMBER OF NODES DEFINED BY THE USER                   13718
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                27484
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =  0.50000    
+       SYSTEM TIME (SEC)    =  0.20000    
+       TOTAL CPU TIME (SEC) =  0.70000    
+       WALLCLOCK TIME (SEC) =          1
+1
+
+   Abaqus 3DEXPERIENCE R2018x                                  Date 12-Mar-2022   Time 16:24:47
+   For use by UNIVERSITY COLLEGE LONDON under license from Dassault Systemes or its subsidiary.
+
+                                                                                               STEP    1  INCREMENT    1
+                                                                                          TIME COMPLETED IN THIS STEP   0.00    
+
+
+                        S T E P       1     C A L C U L A T I O N   O F   E I G E N V A L U E S
+
+                                            F O R   B U C K L I N G   P R E D I C T I O N
+
+
+
+                                                                                          
+
+     THE SUBSPACE ITERATION METHOD IS USED FOR THIS ANALYSIS
+     NUMBER OF EIGENVALUES                      5
+     MAXIMUM NUMBER OF ITERATIONS                     30
+     NUMBER OF VECTORS IN ITERATION                   10
+                              ONLY INITIAL STRESS EFFECTS ARE INCLUDED IN THE
+                              STIFFNESS MATRIX
+
+     THIS IS A LINEAR PERTURBATION STEP.
+     ALL LOADS ARE DEFINED AS CHANGE IN LOAD TO THE REFERENCE STATE
+  
+                   M E M O R Y   E S T I M A T E
+  
+ PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
+              OPERATIONS           REQUIRED          MINIMIZE I/O
+             PER ITERATION           (MB)               (MB)
+  
+     1          5.98E+06               24                 54
+  
+ NOTE:
+      (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
+          THE MEMORY REQUIREMENT PRINTED HERE CAN ONLY BE VIEWED AS A GENERAL GUIDELINE BASED ON THE BEST
+          KNOWLEDGE AVAILABLE AT THE BEGINNING OF A STEP BEFORE THE SOLUTION PROCESS HAS BEGUN.
+      (2) THE ESTIMATE IS NORMALLY UPDATED AT THE BEGINNING OF EVERY STEP. IT IS THE MAXIMUM VALUE OF THE
+          ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP OF THE ANALYSIS, WITH UNSYMMETRIC SOLUTION TAKEN
+          INTO ACCOUNT IF APPLICABLE. 
+      (3) SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE FIRST ITERATION OF THE 
+          CURRENT STEP, THE MEMORY ESTIMATE MIGHT BE SIGNIFICANTLY DIFFERENT THAN ACTUAL USAGE FOR 
+          PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN
+          THE SAME STEP). EXAMPLES ARE: PROBLEMS WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL
+          CHANGE, PROBLEMS WITH BOTH STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES WHERE ACOUSTIC 
+          ELEMENTS WILL ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
+      (4) FOR MULTI-PROCESS EXECUTION, THE ESTIMATED VALUE OF FLOATING POINT OPERATIONS FOR EACH PROCESS
+          IS BASED ON AN INITIAL SCHEDULING OF OPERATIONS AND MIGHT NOT REFLECT THE ACTUAL FLOATING 
+          POINT OPERATIONS COMPLETED ON EACH PROCESS. OPERATIONS ARE DYNAMICALLY BALANCED DURING EXECUTION, 
+          SO THE ACTUAL BALANCE OF OPERATIONS BETWEEN PROCESSES IS EXPECTED TO BE BETTER THAN THE ESTIMATE
+          PRINTED HERE.
+      (5) THE UPPER LIMIT OF MEMORY THAT CAN BE ALLOCATED BY ABAQUS WILL IN GENERAL DEPEND ON THE VALUE OF
+          THE "MEMORY" PARAMETER AND THE AMOUNT OF PHYSICAL MEMORY AVAILABLE ON THE MACHINE. PLEASE SEE
+          THE "ABAQUS ANALYSIS USER'S MANUAL" FOR MORE DETAILS. THE ACTUAL USAGE OF MEMORY AND OF DISK
+          SPACE FOR SCRATCH DATA WILL DEPEND ON THIS UPPER LIMIT AS WELL AS THE MEMORY REQUIRED TO MINIMIZE
+          I/O. IF THE MEMORY UPPER LIMIT IS GREATER THAN THE MEMORY REQUIRED TO MINIMIZE I/O, THEN THE ACTUAL
+          MEMORY USAGE WILL BE CLOSE TO THE ESTIMATED "MEMORY TO MINIMIZE I/O" VALUE, AND THE SCRATCH DISK
+          USAGE WILL BE CLOSE-TO-ZERO; OTHERWISE, THE ACTUAL MEMORY USED WILL BE CLOSE TO THE PREVIOUSLY
+          MENTIONED MEMORY LIMIT, AND THE SCRATCH DISK USAGE WILL BE ROUGHLY PROPORTIONAL TO THE DIFFERENCE
+          BETWEEN THE ESTIMATED "MEMORY TO MINIMIZE I/O" AND THE MEMORY UPPER LIMIT. HOWEVER ACCURATE
+          ESTIMATE OF THE SCRATCH DISK SPACE IS NOT POSSIBLE.
+      (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
+  
+                   M E M O R Y   E S T I M A T E
+  
+ PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
+              OPERATIONS           REQUIRED          MINIMIZE I/O
+             PER ITERATION           (MB)               (MB)
+  
+     1          6.02E+06               27                 57
+  
+ NOTE:
+      (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
+          THE MEMORY REQUIREMENT PRINTED HERE CAN ONLY BE VIEWED AS A GENERAL GUIDELINE BASED ON THE BEST
+          KNOWLEDGE AVAILABLE AT THE BEGINNING OF A STEP BEFORE THE SOLUTION PROCESS HAS BEGUN.
+      (2) THE ESTIMATE IS NORMALLY UPDATED AT THE BEGINNING OF EVERY STEP. IT IS THE MAXIMUM VALUE OF THE
+          ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP OF THE ANALYSIS, WITH UNSYMMETRIC SOLUTION TAKEN
+          INTO ACCOUNT IF APPLICABLE. 
+      (3) SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE FIRST ITERATION OF THE 
+          CURRENT STEP, THE MEMORY ESTIMATE MIGHT BE SIGNIFICANTLY DIFFERENT THAN ACTUAL USAGE FOR 
+          PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN
+          THE SAME STEP). EXAMPLES ARE: PROBLEMS WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL
+          CHANGE, PROBLEMS WITH BOTH STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES WHERE ACOUSTIC 
+          ELEMENTS WILL ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
+      (4) FOR MULTI-PROCESS EXECUTION, THE ESTIMATED VALUE OF FLOATING POINT OPERATIONS FOR EACH PROCESS
+          IS BASED ON AN INITIAL SCHEDULING OF OPERATIONS AND MIGHT NOT REFLECT THE ACTUAL FLOATING 
+          POINT OPERATIONS COMPLETED ON EACH PROCESS. OPERATIONS ARE DYNAMICALLY BALANCED DURING EXECUTION, 
+          SO THE ACTUAL BALANCE OF OPERATIONS BETWEEN PROCESSES IS EXPECTED TO BE BETTER THAN THE ESTIMATE
+          PRINTED HERE.
+      (5) THE UPPER LIMIT OF MEMORY THAT CAN BE ALLOCATED BY ABAQUS WILL IN GENERAL DEPEND ON THE VALUE OF
+          THE "MEMORY" PARAMETER AND THE AMOUNT OF PHYSICAL MEMORY AVAILABLE ON THE MACHINE. PLEASE SEE
+          THE "ABAQUS ANALYSIS USER'S MANUAL" FOR MORE DETAILS. THE ACTUAL USAGE OF MEMORY AND OF DISK
+          SPACE FOR SCRATCH DATA WILL DEPEND ON THIS UPPER LIMIT AS WELL AS THE MEMORY REQUIRED TO MINIMIZE
+          I/O. IF THE MEMORY UPPER LIMIT IS GREATER THAN THE MEMORY REQUIRED TO MINIMIZE I/O, THEN THE ACTUAL
+          MEMORY USAGE WILL BE CLOSE TO THE ESTIMATED "MEMORY TO MINIMIZE I/O" VALUE, AND THE SCRATCH DISK
+          USAGE WILL BE CLOSE-TO-ZERO; OTHERWISE, THE ACTUAL MEMORY USED WILL BE CLOSE TO THE PREVIOUSLY
+          MENTIONED MEMORY LIMIT, AND THE SCRATCH DISK USAGE WILL BE ROUGHLY PROPORTIONAL TO THE DIFFERENCE
+          BETWEEN THE ESTIMATED "MEMORY TO MINIMIZE I/O" AND THE MEMORY UPPER LIMIT. HOWEVER ACCURATE
+          ESTIMATE OF THE SCRATCH DISK SPACE IS NOT POSSIBLE.
+      (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
+
+
+                              E I G E N V A L U E    O U T P U T     
+
+ BUCKLING LOAD ESTIMATE = ("DEAD" LOADS) + EIGENVALUE * ("LIVE" LOADS).
+          "DEAD" LOADS = TOTAL LOAD BEFORE  *BUCKLE STEP.
+          "LIVE" LOADS = INCREMENTAL LOAD IN *BUCKLE STEP
+
+
+ MODE NO      EIGENVALUE
+
+
+       1      1.01356E-05
+       2      1.11845E-05
+       3      1.15289E-05
+       4      1.34292E-05
+       5      1.35690E-05
+
+
+          THE ANALYSIS HAS BEEN COMPLETED
+
+
+
+                              ANALYSIS COMPLETE
+                              WITH      2 WARNING MESSAGES ON THE DAT FILE
+                              AND       2 WARNING MESSAGES ON THE MSG FILE
+                                        2 WARNINGS ARE FOR NUMERICAL PROBLEMS
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =   3.0000    
+       SYSTEM TIME (SEC)    =  0.30000    
+       TOTAL CPU TIME (SEC) =   3.3000    
+       WALLCLOCK TIME (SEC) =          4
