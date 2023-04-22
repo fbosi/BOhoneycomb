@@ -1,0 +1,4 @@
+SQLAlchemy==1.4.17
+PyYAML>=5.4
+matplotlib
+fpdf2
