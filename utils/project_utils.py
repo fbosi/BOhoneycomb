@@ -135,12 +135,55 @@ def generate_report(opt_config, means, best_parameters):
 
 # Simulation class
 class Simulation:
-    """"Class for storing simulation data and running trials in ABAQUS """
+    """
+    A class to represent and manage simulations for a given model in ABAQUS.
 
-    def __init__(self, model_name, script_name, result_metrics, temp_dir, runfile_dir, abaqus_dir='abaqus',
+    Attributes
+    ----------
+    model_name : str
+        Name of the model used for simulation.
+    script_name : str
+        Name of the script to run the simulation.
+    result_metrics : object
+        Metrics used for the result analysis.
+    temp_dir : str
+        Temporary directory path for storing temporary simulation files.
+    runfile_dir : str
+        Directory path to save run files.
+    abaqus_dir : str, optional
+        Directory containing ABAQUS installation (default is 'abaqus').
+    save_cae : bool, optional
+        Flag to determine whether to save the CAE file or not (default is
+        False).
+
+    Methods
+    -------
+    clean_up_prompt():
+        Prompts the user for cleaning up previous simulations.
+    get_results(parametrization: dict) -> dict:
+        Runs the simulation with the given parametrization and retrieves the
+        results.
+    analytical_hex_thick(parametrization: dict) -> dict:
+        Placeholder function wiht the same signature as get_results for testing
+        the BO.
+
+    Examples
+    --------
+    >>> simulation = Simulation("my_model", "script_name", metrics, "temp_dir", "runfile_dir")
+    >>> parametrization = {'eta': 0.5, 'xi': 0.3}
+    >>> simulation.get_results(parametrization)
+    """
+
+    def __init__(self,
+                 model_name,
+                 script_name,
+                 result_metrics,
+                 temp_dir,
+                 runfile_dir,
+                 abaqus_dir='abaqus',
                  save_cae=False):
 
-        # Setting up directories        
+        # Setting up directories
         self.model_name = model_name
         self.script_name = script_name
         self.temp_dir = temp_dir
@@ -148,12 +191,34 @@ class Simulation:
         self.result_metrics = result_metrics
         self.save_cae = save_cae
         self.abaqus_dir = abaqus_dir
-
         self.iterator = 0
 
-    def clean_up_prompt(self):
+        self.check_abaqus_dir()
 
-        if yes_or_no('Running the program will delete all previous simulations. Proceed?'):
+    def check_abaqus_dir(self):
+
+        msg = (f"The specified abaqus_dir: '{self.abaqus_dir}' is incorrect or "
+               "no Abaqus installation was found on the system. If testing the "
+               "BO, please use Simulation.analytical_hex_thick instead of "
+               "Simulation.get_results as the evaluation function")
+        # Check for the existence of Abaqus installation
+        try:
+            response = subprocess.run(self.abaqus_dir, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            print("Output:", response.stdout.decode())
+        except FileNotFoundError:
+            raise FileNotFoundError(msg)
+        except Exception as e:
+            raise Exception(msg)
+
+    def clean_up_prompt(self):
+        """
+        Prompts the user to clean up all previous simulations. If the user accepts,
+        it cleans the directories; otherwise, it terminates the script.
+        """
+        if yes_or_no(
+                "Running the program will delete all previous"
+                " simulation results. Proceed?"
+        ):
             clean_directory(self.temp_dir)
             clean_directory(self.runfile_dir)
         else:
@@ -161,8 +226,29 @@ class Simulation:
             exit()
 
     def get_results(self, parametrization):
+        """
+        Runs the simulation script with the given parametrization and retrieves
+        the results. This method can be used as the evaluation function of
+        the AxClient to perform BO using Abaqus.
+
+        Parameters
+        ----------
+        parametrization : dict
+            Dictionary containing parameters for the simulation.
+
+        Returns
+        -------
+        results : dict
+            Dictionary containing the results of the simulation.
+
+        Example
+        -------
+        >>> parametrization = {'eta': 0.5, 'xi': 0.3}
+        >>> simulation.get_results(parametrization)
+        """
+
         self.iterator += 1
-        # unique filename generated on each call
+        # Generate a unique filename on each call
         iterator = randrange(1, 1000000)
         # create job name from iteration number and model name
         self.job_name = "{}_sim_{}".format(self.model_name, iterator)
@@ -172,27 +258,33 @@ class Simulation:
 
         runfile = os.path.join(self.runfile_dir, runfile_name)
 
-        # Generate the script which will run simulation for given params (Python 2.7)
+        # Generate the script which will run simulation for given params
+        # (Python 2.7). The approach here is inspired by the F3DASM framework
+        # available at: https://github.com/bessagroup/f3dasm
 
-        lines = ['import os',
-                 'import run.models.%s.%s as mds' % (2 * (self.script_name,)),
-                 'os.chdir(r\'%s\')' % self.temp_dir,
-                 'model_name = \'%s\'' % self.model_name,
-                 'job_name = \'%s\'' % self.job_name,
-                 'mds.create_sim(model_name,job_name, %s, save_cae = %s)' % (parametrization, self.save_cae),
-                 'mds.post_process(job_name, %s)' % parametrization]
+        lines = [
+            'import os',
+            'import run.models.%s.%s as mds' % (2 * (self.script_name, )),
+            'os.chdir(r\'%s\')' % self.temp_dir,
+            'model_name = \'%s\'' % self.model_name,
+            'job_name = \'%s\'' % self.job_name,
+            'mds.create_sim(model_name,job_name, %s, save_cae = %s)' %
+            (parametrization, self.save_cae),
+            'mds.post_process(job_name, %s)' % parametrization
+        ]
 
-        # write the commands onto a runfile
+        # Write the commands onto a runfile
         with open(runfile, 'x') as f:
             for line in lines:
                 f.write(line + '\n')
             f.close()
 
-        # Run the script using cmd                    
+        # Run the script using cmd
         command = f'{self.abaqus_dir} cae noGUI={runfile}'
 
-        # Normally set to True but False is good for debuging
-        suppress_output = False
+        # Whether to suppress the ABAQUS Python output or not - setting this
+        # to False might be useful for debugging
+        suppress_output = True
 
         if suppress_output:
             FNULL = open(os.devnull, 'w')
@@ -204,11 +296,11 @@ class Simulation:
         else:
             os.system(command)
 
-        # result file is stored within temp so it must be extracted
+        # The results are stored in a pickle file
         pickle_name = self.job_name + '_results.pkl'
         results_file = os.path.join(self.temp_dir, pickle_name)
 
-        # Unpickling the file 
+        # Unpickling the file
         with open(results_file, 'rb') as f:
             results = pickle.load(f, encoding='bytes')
 
@@ -217,20 +309,44 @@ class Simulation:
         return results
 
     def analytical_hex_thick(self, parametrization):
+        """
+        Analytical function, which is used in place of the get_results to test
+        the BO framework outside of Abaqus.
+
+        Parameters
+        ----------
+        parametrization : dict
+            Dictionary containing parameters 'eta' and 'xi' for analysis.
+
+        Returns
+        -------
+        results : dict
+            Dictionary containing the results of the analysis such as
+            'stress_ratio' and 'stiffness_ratio'.
+
+        Example
+        -------
+        >>> parametrization = {'eta': 0.5, 'xi': 0.3}
+        >>> simulation.analytical_hex_thick(parametrization)
+        """
         eta = parametrization['eta']
         xi = parametrization['xi']
 
-        stiffness_ratio = (eta ** 3 / (1 - xi + eta * xi) ** 3) * (1 / (xi ** 3 + eta ** 3 - eta ** 3 * xi ** 3))
+        stiffness_ratio = (eta**3 / (1 - xi + eta * xi)**3) * (
+            1 / (xi**3 + eta**3 - eta**3 * xi**3))
 
         relative_density = 0.15
         # The quantities below are not normalised wrt uniform
         # plastic strength is per material yield strength - this eventually cancels out
-        plastic_strength = 0.5 * relative_density ** 2 * 1 / (
-                    1 - xi + xi * eta) ** 2 if xi < eta ** 2 else 0.5 * relative_density ** 2 * eta ** 2 / (
-                    xi * (1 - xi + xi * eta) ** 2)
-        uniform_strength = 0.5 * relative_density ** 2
+        plastic_strength = 0.5 * relative_density**2 * 1 / (
+            1 - xi + xi *
+            eta)**2 if xi < eta**2 else 0.5 * relative_density**2 * eta**2 / (
+                xi * (1 - xi + xi * eta)**2)
+        uniform_strength = 0.5 * relative_density**2
 
-        results = {'stress_ratio': (plastic_strength / uniform_strength,0.0),
-                   'stiffness_ratio': (stiffness_ratio, 0.0)}
+        results = {
+            'stress_ratio': (plastic_strength / uniform_strength, 0.0),
+            'stiffness_ratio': (stiffness_ratio, 0.0)
+        }
 
         return results
